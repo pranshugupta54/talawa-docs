@@ -16,8 +16,8 @@
 
 ### FundraisingCampaignPledge
 
-• `Const` **FundraisingCampaignPledge**: `Model`\<[`InterfaceFundraisingCampaignPledges`](../interfaces/models_FundraisingCampaignPledge.InterfaceFundraisingCampaignPledges.md), \{\}, \{\}\>
+• `Const` **FundraisingCampaignPledge**: `Model`\<[`InterfaceFundraisingCampaignPledges`](../interfaces/models_FundraisingCampaignPledge.InterfaceFundraisingCampaignPledges.md), \{\}, \{\}, \{\}, `Document`\<`unknown`, \{\}, [`InterfaceFundraisingCampaignPledges`](../interfaces/models_FundraisingCampaignPledge.InterfaceFundraisingCampaignPledges.md)\> & [`InterfaceFundraisingCampaignPledges`](../interfaces/models_FundraisingCampaignPledge.InterfaceFundraisingCampaignPledges.md) & `Required`\<\{ `_id`: `ObjectId`  \}\>, `any`\>
 
 #### Defined in
 
-[src/models/FundraisingCampaignPledge.ts:64](https://github.com/adi790uu/talawa-api/blob/5146430/src/models/FundraisingCampaignPledge.ts#L64)
+[src/models/FundraisingCampaignPledge.ts:64](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/FundraisingCampaignPledge.ts#L64)

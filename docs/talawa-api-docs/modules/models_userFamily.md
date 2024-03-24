@@ -16,8 +16,8 @@
 
 ### UserFamily
 
-• `Const` **UserFamily**: `Model`\<[`InterfaceUserFamily`](../interfaces/models_userFamily.InterfaceUserFamily.md), \{\}, \{\}\>
+• `Const` **UserFamily**: `Model`\<[`InterfaceUserFamily`](../interfaces/models_userFamily.InterfaceUserFamily.md), \{\}, \{\}, \{\}, `Document`\<`unknown`, \{\}, [`InterfaceUserFamily`](../interfaces/models_userFamily.InterfaceUserFamily.md)\> & [`InterfaceUserFamily`](../interfaces/models_userFamily.InterfaceUserFamily.md) & `Required`\<\{ `_id`: `ObjectId`  \}\>, `any`\>
 
 #### Defined in
 
-[src/models/userFamily.ts:55](https://github.com/adi790uu/talawa-api/blob/5146430/src/models/userFamily.ts#L55)
+[src/models/userFamily.ts:55](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/userFamily.ts#L55)

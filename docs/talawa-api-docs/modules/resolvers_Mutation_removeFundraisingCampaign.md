@@ -31,11 +31,11 @@ context of entire application
 **`Remarks`**
 
 The following checks are done:
-1. If the user exists
+1. If the user exists.
 2. If the fundraising campaign  exists.
 3. If the user is authorized.
 4. If the user is admin of the organization.
 
 #### Defined in
 
-[src/resolvers/Mutation/removeFundraisingCampaign.ts:29](https://github.com/adi790uu/talawa-api/blob/5146430/src/resolvers/Mutation/removeFundraisingCampaign.ts#L29)
+[src/resolvers/Mutation/removeFundraisingCampaign.ts:31](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/resolvers/Mutation/removeFundraisingCampaign.ts#L31)

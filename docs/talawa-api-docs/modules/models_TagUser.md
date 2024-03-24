@@ -16,8 +16,8 @@
 
 ### TagUser
 
-• `Const` **TagUser**: `Model`\<[`InterfaceTagUser`](../interfaces/models_TagUser.InterfaceTagUser.md), \{\}, \{\}\>
+• `Const` **TagUser**: `Model`\<[`InterfaceTagUser`](../interfaces/models_TagUser.InterfaceTagUser.md), \{\}, \{\}, \{\}, `Document`\<`unknown`, \{\}, [`InterfaceTagUser`](../interfaces/models_TagUser.InterfaceTagUser.md)\> & [`InterfaceTagUser`](../interfaces/models_TagUser.InterfaceTagUser.md) & `Required`\<\{ `_id`: `ObjectId`  \}\>, `any`\>
 
 #### Defined in
 
-[src/models/TagUser.ts:32](https://github.com/PalisadoesFoundation/talawa-api/blob/cf57ca9/src/models/TagUser.ts#L32)
+[src/models/TagUser.ts:35](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/TagUser.ts#L35)

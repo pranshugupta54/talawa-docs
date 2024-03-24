@@ -20,8 +20,8 @@
 
 ### FundraisingCampaign
 
-• `Const` **FundraisingCampaign**: `Model`\<[`InterfaceFundraisingCampaign`](../interfaces/models_FundraisingCampaign.InterfaceFundraisingCampaign.md), \{\}, \{\}\>
+• `Const` **FundraisingCampaign**: `Model`\<[`InterfaceFundraisingCampaign`](../interfaces/models_FundraisingCampaign.InterfaceFundraisingCampaign.md), \{\}, \{\}, \{\}, `Document`\<`unknown`, \{\}, [`InterfaceFundraisingCampaign`](../interfaces/models_FundraisingCampaign.InterfaceFundraisingCampaign.md)\> & [`InterfaceFundraisingCampaign`](../interfaces/models_FundraisingCampaign.InterfaceFundraisingCampaign.md) & `Required`\<\{ `_id`: `ObjectId`  \}\>, `any`\>
 
 #### Defined in
 
-[src/models/FundraisingCampaign.ts:241](https://github.com/adi790uu/talawa-api/blob/5146430/src/models/FundraisingCampaign.ts#L241)
+[src/models/FundraisingCampaign.ts:241](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/FundraisingCampaign.ts#L241)

@@ -24,4 +24,4 @@ An object that contains `id` of the campaign.
 
 #### Defined in
 
-[src/resolvers/Query/getFundraisingCampaign.ts:12](https://github.com/adi790uu/talawa-api/blob/5146430/src/resolvers/Query/getFundraisingCampaign.ts#L12)
+[src/resolvers/Query/getFundraisingCampaign.ts:12](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/resolvers/Query/getFundraisingCampaign.ts#L12)

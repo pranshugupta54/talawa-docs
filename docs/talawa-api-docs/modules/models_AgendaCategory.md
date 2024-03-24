@@ -17,17 +17,17 @@
 
 ### AgendaCategoryModel
 
-• `Const` **AgendaCategoryModel**: `Model`\<[`InterfaceAgendaCategory`](../interfaces/models_AgendaCategory.InterfaceAgendaCategory.md), \{\}, \{\}\>
+• `Const` **AgendaCategoryModel**: `Model`\<[`InterfaceAgendaCategory`](../interfaces/models_AgendaCategory.InterfaceAgendaCategory.md), \{\}, \{\}, \{\}, `Document`\<`unknown`, \{\}, [`InterfaceAgendaCategory`](../interfaces/models_AgendaCategory.InterfaceAgendaCategory.md)\> & [`InterfaceAgendaCategory`](../interfaces/models_AgendaCategory.InterfaceAgendaCategory.md) & `Required`\<\{ `_id`: `ObjectId`  \}\>, `any`\>
 
 #### Defined in
 
-[src/models/AgendaCategory.ts:65](https://github.com/adi790uu/talawa-api/blob/5146430/src/models/AgendaCategory.ts#L65)
+[src/models/AgendaCategory.ts:65](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/AgendaCategory.ts#L65)
 
 ___
 
 ### AgendaCategorySchema
 
-• `Const` **AgendaCategorySchema**: `Schema`\<`Document`\<`any`, `any`, `any`\>, `Model`\<`Document`\<`any`, `any`, `any`\>, `any`, `any`\>, `undefined`, \{\}\>
+• `Const` **AgendaCategorySchema**: `Schema`\<`any`, `Model`\<`any`, `any`, `any`, `any`, `any`, `any`\>, \{\}, \{\}, \{\}, \{\}, `DefaultSchemaOptions`, \{ `createdAt`: `Date` ; `createdBy`: `ObjectId` ; `description`: `undefined` \| ``null`` \| `string` ; `name`: `string` ; `organizationId`: `undefined` \| ``null`` \| `ObjectId` ; `updatedAt`: `Date` ; `updatedBy`: `undefined` \| ``null`` \| `ObjectId`  \}, `Document`\<`unknown`, \{\}, `FlatRecord`\<\{ `createdAt`: `Date` ; `createdBy`: `ObjectId` ; `description`: `undefined` \| ``null`` \| `string` ; `name`: `string` ; `organizationId`: `undefined` \| ``null`` \| `ObjectId` ; `updatedAt`: `Date` ; `updatedBy`: `undefined` \| ``null`` \| `ObjectId`  \}\>\> & `FlatRecord`\<\{ `createdAt`: `Date` ; `createdBy`: `ObjectId` ; `description`: `undefined` \| ``null`` \| `string` ; `name`: `string` ; `organizationId`: `undefined` \| ``null`` \| `ObjectId` ; `updatedAt`: `Date` ; `updatedBy`: `undefined` \| ``null`` \| `ObjectId`  \}\> & \{ `_id`: `ObjectId`  \}\>
 
 This is the Mongoose schema for an agenda category (test-change).
 
@@ -61,4 +61,4 @@ Date when the agenda category was last updated.
 
 #### Defined in
 
-[src/models/AgendaCategory.ts:27](https://github.com/adi790uu/talawa-api/blob/5146430/src/models/AgendaCategory.ts#L27)
+[src/models/AgendaCategory.ts:27](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/AgendaCategory.ts#L27)

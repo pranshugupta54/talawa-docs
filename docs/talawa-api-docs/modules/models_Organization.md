@@ -16,8 +16,8 @@
 
 ### Organization
 
-• `Const` **Organization**: `Model`\<[`InterfaceOrganization`](../interfaces/models_Organization.InterfaceOrganization.md), \{\}, \{\}\>
+• `Const` **Organization**: `Model`\<[`InterfaceOrganization`](../interfaces/models_Organization.InterfaceOrganization.md), \{\}, \{\}, \{\}, `Document`\<`unknown`, \{\}, [`InterfaceOrganization`](../interfaces/models_Organization.InterfaceOrganization.md)\> & [`InterfaceOrganization`](../interfaces/models_Organization.InterfaceOrganization.md) & `Required`\<\{ `_id`: `ObjectId`  \}\>, `any`\>
 
 #### Defined in
 
-[src/models/Organization.ts:184](https://github.com/PalisadoesFoundation/talawa-api/blob/cf57ca9/src/models/Organization.ts#L184)
+[src/models/Organization.ts:206](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/Organization.ts#L206)

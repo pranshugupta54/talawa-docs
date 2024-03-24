@@ -33,7 +33,8 @@ context of entire application
 The following checks are done:
 1. If the user exists
 2. If the organization exists
+3. If the user has appUserProfile
 
 #### Defined in
 
-[src/resolvers/Mutation/createPost.ts:28](https://github.com/PalisadoesFoundation/talawa-api/blob/cf57ca9/src/resolvers/Mutation/createPost.ts#L28)
+[src/resolvers/Mutation/createPost.ts:32](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/resolvers/Mutation/createPost.ts#L32)

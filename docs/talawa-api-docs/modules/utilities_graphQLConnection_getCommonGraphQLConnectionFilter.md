@@ -54,4 +54,4 @@ const objectList = await User.find(filter).limit(10);
 
 #### Defined in
 
-[src/utilities/graphQLConnection/getCommonGraphQLConnectionFilter.ts:44](https://github.com/adi790uu/talawa-api/blob/5146430/src/utilities/graphQLConnection/getCommonGraphQLConnectionFilter.ts#L44)
+[src/utilities/graphQLConnection/getCommonGraphQLConnectionFilter.ts:44](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/utilities/graphQLConnection/getCommonGraphQLConnectionFilter.ts#L44)

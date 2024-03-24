@@ -16,8 +16,8 @@
 
 ### EventVolunteer
 
-• `Const` **EventVolunteer**: `Model`\<[`InterfaceEventVolunteer`](../interfaces/models_EventVolunteer.InterfaceEventVolunteer.md), \{\}, \{\}\>
+• `Const` **EventVolunteer**: `Model`\<[`InterfaceEventVolunteer`](../interfaces/models_EventVolunteer.InterfaceEventVolunteer.md), \{\}, \{\}, \{\}, `Document`\<`unknown`, \{\}, [`InterfaceEventVolunteer`](../interfaces/models_EventVolunteer.InterfaceEventVolunteer.md)\> & [`InterfaceEventVolunteer`](../interfaces/models_EventVolunteer.InterfaceEventVolunteer.md) & `Required`\<\{ `_id`: `ObjectId`  \}\>, `any`\>
 
 #### Defined in
 
-[src/models/EventVolunteer.ts:58](https://github.com/adi790uu/talawa-api/blob/5146430/src/models/EventVolunteer.ts#L58)
+[src/models/EventVolunteer.ts:58](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/EventVolunteer.ts#L58)

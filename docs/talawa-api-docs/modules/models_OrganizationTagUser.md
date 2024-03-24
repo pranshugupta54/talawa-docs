@@ -16,8 +16,8 @@
 
 ### OrganizationTagUser
 
-• `Const` **OrganizationTagUser**: `Model`\<[`InterfaceOrganizationTagUser`](../interfaces/models_OrganizationTagUser.InterfaceOrganizationTagUser.md), \{\}, \{\}\>
+• `Const` **OrganizationTagUser**: `Model`\<[`InterfaceOrganizationTagUser`](../interfaces/models_OrganizationTagUser.InterfaceOrganizationTagUser.md), \{\}, \{\}, \{\}, `Document`\<`unknown`, \{\}, [`InterfaceOrganizationTagUser`](../interfaces/models_OrganizationTagUser.InterfaceOrganizationTagUser.md)\> & [`InterfaceOrganizationTagUser`](../interfaces/models_OrganizationTagUser.InterfaceOrganizationTagUser.md) & `Required`\<\{ `_id`: `ObjectId`  \}\>, `any`\>
 
 #### Defined in
 
-[src/models/OrganizationTagUser.ts:45](https://github.com/PalisadoesFoundation/talawa-api/blob/cf57ca9/src/models/OrganizationTagUser.ts#L45)
+[src/models/OrganizationTagUser.ts:48](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/OrganizationTagUser.ts#L48)

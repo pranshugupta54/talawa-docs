@@ -35,7 +35,8 @@ The following checks are done:
 2. If the event exists
 3. If the user is an admin of the organization.
 4. If the user is an admin of the event.
+5. If the user has appUserProfile
 
 #### Defined in
 
-[src/resolvers/Mutation/removeEvent.ts:24](https://github.com/PalisadoesFoundation/talawa-api/blob/cf57ca9/src/resolvers/Mutation/removeEvent.ts#L24)
+[src/resolvers/Mutation/removeEvent.ts:31](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/resolvers/Mutation/removeEvent.ts#L31)

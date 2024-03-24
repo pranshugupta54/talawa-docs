@@ -18,7 +18,7 @@
 
 ### createAccessToken
 
-▸ **createAccessToken**(`user`): `string`
+▸ **createAccessToken**(`user`, `appUserProfile`): `string`
 
 This function creates a json web token which expires in 15 minutes.
 It signs the given payload(user data) into a JSON Web Token string payload.
@@ -28,6 +28,7 @@ It signs the given payload(user data) into a JSON Web Token string payload.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `user` | [`InterfaceUser`](../interfaces/models_User.InterfaceUser.md) | User data |
+| `appUserProfile` | [`InterfaceAppUserProfile`](../interfaces/models_AppUserProfile.InterfaceAppUserProfile.md) | - |
 
 #### Returns
 
@@ -37,19 +38,20 @@ JSON Web Token string payload
 
 #### Defined in
 
-[src/utilities/auth.ts:19](https://github.com/PalisadoesFoundation/talawa-api/blob/cf57ca9/src/utilities/auth.ts#L19)
+[src/utilities/auth.ts:19](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/utilities/auth.ts#L19)
 
 ___
 
 ### createRefreshToken
 
-▸ **createRefreshToken**(`user`): `string`
+▸ **createRefreshToken**(`user`, `appUserProfile`): `string`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `user` | [`InterfaceUser`](../interfaces/models_User.InterfaceUser.md) |
+| `appUserProfile` | [`InterfaceAppUserProfile`](../interfaces/models_AppUserProfile.InterfaceAppUserProfile.md) |
 
 #### Returns
 
@@ -57,7 +59,7 @@ ___
 
 #### Defined in
 
-[src/utilities/auth.ts:35](https://github.com/PalisadoesFoundation/talawa-api/blob/cf57ca9/src/utilities/auth.ts#L35)
+[src/utilities/auth.ts:38](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/utilities/auth.ts#L38)
 
 ___
 
@@ -77,4 +79,4 @@ ___
 
 #### Defined in
 
-[src/utilities/auth.ts:51](https://github.com/PalisadoesFoundation/talawa-api/blob/cf57ca9/src/utilities/auth.ts#L51)
+[src/utilities/auth.ts:57](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/utilities/auth.ts#L57)

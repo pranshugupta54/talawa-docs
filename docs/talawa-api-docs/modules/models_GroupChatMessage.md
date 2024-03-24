@@ -16,8 +16,8 @@
 
 ### GroupChatMessage
 
-• `Const` **GroupChatMessage**: `Model`\<[`InterfaceGroupChatMessage`](../interfaces/models_GroupChatMessage.InterfaceGroupChatMessage.md), \{\}, \{\}\>
+• `Const` **GroupChatMessage**: `Model`\<[`InterfaceGroupChatMessage`](../interfaces/models_GroupChatMessage.InterfaceGroupChatMessage.md), \{\}, \{\}, \{\}, `Document`\<`unknown`, \{\}, [`InterfaceGroupChatMessage`](../interfaces/models_GroupChatMessage.InterfaceGroupChatMessage.md)\> & [`InterfaceGroupChatMessage`](../interfaces/models_GroupChatMessage.InterfaceGroupChatMessage.md) & `Required`\<\{ `_id`: `ObjectId`  \}\>, `any`\>
 
 #### Defined in
 
-[src/models/GroupChatMessage.ts:58](https://github.com/PalisadoesFoundation/talawa-api/blob/cf57ca9/src/models/GroupChatMessage.ts#L58)
+[src/models/GroupChatMessage.ts:61](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/GroupChatMessage.ts#L61)

@@ -35,7 +35,8 @@ The following checks are done:
 2. If the post exists
 3. If the user is the creator of the post.
 4. If the user to be removed is a member of the organization.
+5. If the user has appUserProfile.
 
 #### Defined in
 
-[src/resolvers/Mutation/removePost.ts:28](https://github.com/PalisadoesFoundation/talawa-api/blob/cf57ca9/src/resolvers/Mutation/removePost.ts#L28)
+[src/resolvers/Mutation/removePost.ts:30](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/resolvers/Mutation/removePost.ts#L30)

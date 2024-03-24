@@ -16,8 +16,8 @@
 
 ### Plugin
 
-• `Const` **Plugin**: `Model`\<[`InterfacePlugin`](../interfaces/models_Plugin.InterfacePlugin.md), \{\}, \{\}\>
+• `Const` **Plugin**: `Model`\<[`InterfacePlugin`](../interfaces/models_Plugin.InterfacePlugin.md), \{\}, \{\}, \{\}, `Document`\<`unknown`, \{\}, [`InterfacePlugin`](../interfaces/models_Plugin.InterfacePlugin.md)\> & [`InterfacePlugin`](../interfaces/models_Plugin.InterfacePlugin.md) & `Required`\<\{ `_id`: `ObjectId`  \}\>, `any`\>
 
 #### Defined in
 
-[src/models/Plugin.ts:47](https://github.com/PalisadoesFoundation/talawa-api/blob/cf57ca9/src/models/Plugin.ts#L47)
+[src/models/Plugin.ts:50](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/Plugin.ts#L50)

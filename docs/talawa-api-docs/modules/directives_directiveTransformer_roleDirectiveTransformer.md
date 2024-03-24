@@ -12,19 +12,19 @@
 
 ### default
 
-▸ **default**(`schema`, `directiveName`): `any`
+▸ **default**(`schema`, `directiveName`): `GraphQLSchema`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `schema` | `any` |
-| `directiveName` | `any` |
+| `schema` | `GraphQLSchema` |
+| `directiveName` | `string` |
 
 #### Returns
 
-`any`
+`GraphQLSchema`
 
 #### Defined in
 
-[src/directives/directiveTransformer/roleDirectiveTransformer.ts:11](https://github.com/PalisadoesFoundation/talawa-api/blob/cf57ca9/src/directives/directiveTransformer/roleDirectiveTransformer.ts#L11)
+[src/directives/directiveTransformer/roleDirectiveTransformer.ts:8](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/directives/directiveTransformer/roleDirectiveTransformer.ts#L8)

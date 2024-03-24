@@ -16,8 +16,8 @@
 
 ### ActionItemCategory
 
-• `Const` **ActionItemCategory**: `Model`\<[`InterfaceActionItemCategory`](../interfaces/models_ActionItemCategory.InterfaceActionItemCategory.md), \{\}, \{\}\>
+• `Const` **ActionItemCategory**: `Model`\<[`InterfaceActionItemCategory`](../interfaces/models_ActionItemCategory.InterfaceActionItemCategory.md), \{\}, \{\}, \{\}, `Document`\<`unknown`, \{\}, [`InterfaceActionItemCategory`](../interfaces/models_ActionItemCategory.InterfaceActionItemCategory.md)\> & [`InterfaceActionItemCategory`](../interfaces/models_ActionItemCategory.InterfaceActionItemCategory.md) & `Required`\<\{ `_id`: `ObjectId`  \}\>, `any`\>
 
 #### Defined in
 
-[src/models/ActionItemCategory.ts:67](https://github.com/PalisadoesFoundation/talawa-api/blob/cf57ca9/src/models/ActionItemCategory.ts#L67)
+[src/models/ActionItemCategory.ts:67](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/ActionItemCategory.ts#L67)

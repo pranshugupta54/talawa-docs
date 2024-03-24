@@ -20,8 +20,10 @@
 
 ### Properties
 
+- [[toStringTag]](libraries_dbLogger.InterfaceLoggableQuery.md#[tostringtag])
 - [\_mongooseOptions](libraries_dbLogger.InterfaceLoggableQuery.md#_mongooseoptions)
 - [catch](libraries_dbLogger.InterfaceLoggableQuery.md#catch)
+- [finally](libraries_dbLogger.InterfaceLoggableQuery.md#finally)
 - [logInfo](libraries_dbLogger.InterfaceLoggableQuery.md#loginfo)
 - [model](libraries_dbLogger.InterfaceLoggableQuery.md#model)
 - [then](libraries_dbLogger.InterfaceLoggableQuery.md#then)
@@ -31,14 +33,15 @@
 - [$where](libraries_dbLogger.InterfaceLoggableQuery.md#$where)
 - [[asyncIterator]](libraries_dbLogger.InterfaceLoggableQuery.md#[asynciterator])
 - [all](libraries_dbLogger.InterfaceLoggableQuery.md#all)
+- [allowDiskUse](libraries_dbLogger.InterfaceLoggableQuery.md#allowdiskuse)
 - [and](libraries_dbLogger.InterfaceLoggableQuery.md#and)
 - [batchSize](libraries_dbLogger.InterfaceLoggableQuery.md#batchsize)
 - [box](libraries_dbLogger.InterfaceLoggableQuery.md#box)
 - [cast](libraries_dbLogger.InterfaceLoggableQuery.md#cast)
 - [circle](libraries_dbLogger.InterfaceLoggableQuery.md#circle)
+- [clone](libraries_dbLogger.InterfaceLoggableQuery.md#clone)
 - [collation](libraries_dbLogger.InterfaceLoggableQuery.md#collation)
 - [comment](libraries_dbLogger.InterfaceLoggableQuery.md#comment)
-- [count](libraries_dbLogger.InterfaceLoggableQuery.md#count)
 - [countDocuments](libraries_dbLogger.InterfaceLoggableQuery.md#countdocuments)
 - [cursor](libraries_dbLogger.InterfaceLoggableQuery.md#cursor)
 - [deleteMany](libraries_dbLogger.InterfaceLoggableQuery.md#deletemany)
@@ -52,11 +55,11 @@
 - [exists](libraries_dbLogger.InterfaceLoggableQuery.md#exists)
 - [explain](libraries_dbLogger.InterfaceLoggableQuery.md#explain)
 - [find](libraries_dbLogger.InterfaceLoggableQuery.md#find)
+- [findById](libraries_dbLogger.InterfaceLoggableQuery.md#findbyid)
 - [findByIdAndDelete](libraries_dbLogger.InterfaceLoggableQuery.md#findbyidanddelete)
 - [findByIdAndUpdate](libraries_dbLogger.InterfaceLoggableQuery.md#findbyidandupdate)
 - [findOne](libraries_dbLogger.InterfaceLoggableQuery.md#findone)
 - [findOneAndDelete](libraries_dbLogger.InterfaceLoggableQuery.md#findoneanddelete)
-- [findOneAndRemove](libraries_dbLogger.InterfaceLoggableQuery.md#findoneandremove)
 - [findOneAndUpdate](libraries_dbLogger.InterfaceLoggableQuery.md#findoneandupdate)
 - [geometry](libraries_dbLogger.InterfaceLoggableQuery.md#geometry)
 - [get](libraries_dbLogger.InterfaceLoggableQuery.md#get)
@@ -75,9 +78,7 @@
 - [limit](libraries_dbLogger.InterfaceLoggableQuery.md#limit)
 - [lt](libraries_dbLogger.InterfaceLoggableQuery.md#lt)
 - [lte](libraries_dbLogger.InterfaceLoggableQuery.md#lte)
-- [map](libraries_dbLogger.InterfaceLoggableQuery.md#map)
 - [maxDistance](libraries_dbLogger.InterfaceLoggableQuery.md#maxdistance)
-- [maxScan](libraries_dbLogger.InterfaceLoggableQuery.md#maxscan)
 - [maxTimeMS](libraries_dbLogger.InterfaceLoggableQuery.md#maxtimems)
 - [merge](libraries_dbLogger.InterfaceLoggableQuery.md#merge)
 - [mod](libraries_dbLogger.InterfaceLoggableQuery.md#mod)
@@ -90,11 +91,12 @@
 - [orFail](libraries_dbLogger.InterfaceLoggableQuery.md#orfail)
 - [polygon](libraries_dbLogger.InterfaceLoggableQuery.md#polygon)
 - [populate](libraries_dbLogger.InterfaceLoggableQuery.md#populate)
+- [post](libraries_dbLogger.InterfaceLoggableQuery.md#post)
+- [pre](libraries_dbLogger.InterfaceLoggableQuery.md#pre)
 - [projection](libraries_dbLogger.InterfaceLoggableQuery.md#projection)
 - [read](libraries_dbLogger.InterfaceLoggableQuery.md#read)
 - [readConcern](libraries_dbLogger.InterfaceLoggableQuery.md#readconcern)
 - [regex](libraries_dbLogger.InterfaceLoggableQuery.md#regex)
-- [remove](libraries_dbLogger.InterfaceLoggableQuery.md#remove)
 - [replaceOne](libraries_dbLogger.InterfaceLoggableQuery.md#replaceone)
 - [select](libraries_dbLogger.InterfaceLoggableQuery.md#select)
 - [selected](libraries_dbLogger.InterfaceLoggableQuery.md#selected)
@@ -108,11 +110,10 @@
 - [size](libraries_dbLogger.InterfaceLoggableQuery.md#size)
 - [skip](libraries_dbLogger.InterfaceLoggableQuery.md#skip)
 - [slice](libraries_dbLogger.InterfaceLoggableQuery.md#slice)
-- [snapshot](libraries_dbLogger.InterfaceLoggableQuery.md#snapshot)
 - [sort](libraries_dbLogger.InterfaceLoggableQuery.md#sort)
 - [tailable](libraries_dbLogger.InterfaceLoggableQuery.md#tailable)
 - [toConstructor](libraries_dbLogger.InterfaceLoggableQuery.md#toconstructor)
-- [update](libraries_dbLogger.InterfaceLoggableQuery.md#update)
+- [transform](libraries_dbLogger.InterfaceLoggableQuery.md#transform)
 - [updateMany](libraries_dbLogger.InterfaceLoggableQuery.md#updatemany)
 - [updateOne](libraries_dbLogger.InterfaceLoggableQuery.md#updateone)
 - [w](libraries_dbLogger.InterfaceLoggableQuery.md#w)
@@ -122,9 +123,23 @@
 
 ## Properties
 
+### [toStringTag]
+
+• **[toStringTag]**: `string`
+
+#### Inherited from
+
+Query.[toStringTag]
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:284
+
+___
+
 ### \_mongooseOptions
 
-• **\_mongooseOptions**: `MongooseQueryOptions`
+• **\_mongooseOptions**: `MongooseQueryOptions`\<`T`, ``"timestamps"`` \| `MongooseBaseQueryOptionKeys` \| ``"lean"``\>
 
 #### Inherited from
 
@@ -132,7 +147,7 @@ Query.\_mongooseOptions
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2150
+node_modules/mongoose/types/query.d.ts:224
 
 ___
 
@@ -147,10 +162,6 @@ Like `.then()`, but only takes a rejection handler.
 #### Type declaration
 
 ▸ \<`TResult`\>(`onrejected?`): `Promise`\<`unknown`\>
-
-Executes the query returning a `Promise` which will be
-resolved with either the doc(s) or rejected with the error.
-Like `.then()`, but only takes a rejection handler.
 
 ##### Type parameters
 
@@ -174,7 +185,38 @@ Query.catch
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2195
+node_modules/mongoose/types/query.d.ts:275
+
+___
+
+### finally
+
+• **finally**: (`onfinally?`: ``null`` \| () =\> `void`) =\> `Promise`\<`unknown`\>
+
+Executes the query returning a `Promise` which will be
+resolved with `.finally()` chained.
+
+#### Type declaration
+
+▸ (`onfinally?`): `Promise`\<`unknown`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `onfinally?` | ``null`` \| () =\> `void` |
+
+##### Returns
+
+`Promise`\<`unknown`\>
+
+#### Inherited from
+
+Query.finally
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:281
 
 ___
 
@@ -184,13 +226,13 @@ ___
 
 #### Defined in
 
-[src/libraries/dbLogger.ts:37](https://github.com/PalisadoesFoundation/talawa-api/blob/cf57ca9/src/libraries/dbLogger.ts#L37)
+[src/libraries/dbLogger.ts:37](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/libraries/dbLogger.ts#L37)
 
 ___
 
 ### model
 
-• **model**: `Model`\<`any`, \{\}, \{\}\>
+• **model**: `Model`\<`any`, \{\}, \{\}, \{\}, `any`, `any`\>
 
 The model this query was created from
 
@@ -200,7 +242,7 @@ Query.model
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2386
+node_modules/mongoose/types/query.d.ts:582
 
 ___
 
@@ -214,9 +256,6 @@ resolved with either the doc(s) or rejected with the error.
 #### Type declaration
 
 ▸ \<`TResult1`, `TResult2`\>(`onfulfilled?`, `onrejected?`): `Promise`\<`TResult1` \| `TResult2`\>
-
-Executes the query returning a `Promise` which will be
-resolved with either the doc(s) or rejected with the error.
 
 ##### Type parameters
 
@@ -242,13 +281,13 @@ Query.then
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2516
+node_modules/mongoose/types/query.d.ts:756
 
 ## Methods
 
 ### $where
 
-▸ **$where**(`argument`): `Query`\<`T`[], `T`, \{\}, `T`\>
+▸ **$where**(`argument`): `Query`\<`T`[], `T`, \{\}, `T`, ``"find"``\>
 
 #### Parameters
 
@@ -258,7 +297,7 @@ node_modules/mongoose/index.d.ts:2516
 
 #### Returns
 
-`Query`\<`T`[], `T`, \{\}, `T`\>
+`Query`\<`T`[], `T`, \{\}, `T`, ``"find"``\>
 
 #### Inherited from
 
@@ -266,21 +305,21 @@ Query.$where
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2165
+node_modules/mongoose/types/query.d.ts:236
 
 ___
 
 ### [asyncIterator]
 
-▸ **[asyncIterator]**(): `AsyncIterableIterator`\<`T`\>
+▸ **[asyncIterator]**(): `AsyncIterableIterator`\<`unknown`\>
 
-Returns a wrapper around a [mongodb driver cursor](http://mongodb.github.io/node-mongodb-native/2.1/api/Cursor.html).
+Returns a wrapper around a [mongodb driver cursor](https://mongodb.github.io/node-mongodb-native/4.9/classes/FindCursor.html).
 A QueryCursor exposes a Streams3 interface, as well as a `.next()` function.
 This is equivalent to calling `.cursor()` with no arguments.
 
 #### Returns
 
-`AsyncIterableIterator`\<`T`\>
+`AsyncIterableIterator`\<`unknown`\>
 
 #### Inherited from
 
@@ -288,35 +327,15 @@ Query.[asyncIterator]
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2157
+node_modules/mongoose/types/query.d.ts:231
 
 ___
 
 ### all
 
-▸ **all**(`val`): `this`
+▸ **all**(`path`, `val`): `this`
 
 Specifies an `$all` query condition. When called with one argument, the most recent path passed to `where()` is used.
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `val` | `any`[] |
-
-#### Returns
-
-`this`
-
-#### Inherited from
-
-Query.all
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2168
-
-▸ **all**(`path`, `val`): `this`
 
 #### Parameters
 
@@ -335,7 +354,53 @@ Query.all
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2169
+node_modules/mongoose/types/query.d.ts:245
+
+▸ **all**(`val`): `this`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `val` | `any`[] |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Query.all
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:246
+
+___
+
+### allowDiskUse
+
+▸ **allowDiskUse**(`value`): `this`
+
+Sets the allowDiskUse option for the query (ignored for \< 4.4.0)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `value` | `boolean` |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Query.allowDiskUse
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:249
 
 ___
 
@@ -361,7 +426,7 @@ Query.and
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2172
+node_modules/mongoose/types/query.d.ts:252
 
 ___
 
@@ -387,35 +452,15 @@ Query.batchSize
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2175
+node_modules/mongoose/types/query.d.ts:255
 
 ___
 
 ### box
 
-▸ **box**(`val`): `this`
+▸ **box**(`lower`, `upper`): `this`
 
 Specifies a `$box` condition
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `val` | `any` |
-
-#### Returns
-
-`this`
-
-#### Inherited from
-
-Query.box
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2178
-
-▸ **box**(`lower`, `upper`): `this`
 
 #### Parameters
 
@@ -434,7 +479,27 @@ Query.box
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2179
+node_modules/mongoose/types/query.d.ts:258
+
+▸ **box**(`val`): `this`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `val` | `any` |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Query.box
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:259
 
 ___
 
@@ -448,7 +513,7 @@ Casts this query to the schema of `model`.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `model?` | ``null`` \| `Model`\<`any`, \{\}, \{\}\> | the model to cast to. If not set, defaults to `this.model` |
+| `model?` | ``null`` \| `Model`\<`any`, \{\}, \{\}, \{\}, `any`, `any`\> | the model to cast to. If not set, defaults to `this.model` |
 | `obj?` | `any` | If not set, defaults to this query's conditions |
 
 #### Returns
@@ -463,35 +528,15 @@ Query.cast
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2188
+node_modules/mongoose/types/query.d.ts:268
 
 ___
 
 ### circle
 
-▸ **circle**(`area`): `this`
+▸ **circle**(`path`, `area`): `this`
 
 Specifies a `$center` or `$centerSphere` condition.
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `area` | `any` |
-
-#### Returns
-
-`this`
-
-#### Inherited from
-
-Query.circle
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2198
-
-▸ **circle**(`path`, `area`): `this`
 
 #### Parameters
 
@@ -510,7 +555,47 @@ Query.circle
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2199
+node_modules/mongoose/types/query.d.ts:287
+
+▸ **circle**(`area`): `this`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `area` | `any` |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Query.circle
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:288
+
+___
+
+### clone
+
+▸ **clone**(): `this`
+
+Make a copy of this query so you can re-execute it.
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Query.clone
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:291
 
 ___
 
@@ -524,7 +609,7 @@ Adds a collation to this op (MongoDB 3.4 and up)
 
 | Name | Type |
 | :------ | :------ |
-| `value` | `CollationDocument` |
+| `value` | `CollationOptions` |
 
 #### Returns
 
@@ -536,7 +621,7 @@ Query.collation
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2202
+node_modules/mongoose/types/query.d.ts:294
 
 ___
 
@@ -562,60 +647,13 @@ Query.comment
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2205
-
-___
-
-### count
-
-▸ **count**(`callback?`): `Query`\<`number`, `T`, \{\}, `T`\>
-
-Specifies this query as a `count` query.
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `callback?` | `Callback`\<`number`\> |
-
-#### Returns
-
-`Query`\<`number`, `T`, \{\}, `T`\>
-
-#### Inherited from
-
-Query.count
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2208
-
-▸ **count**(`criteria`, `callback?`): `Query`\<`number`, `T`, \{\}, `T`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `criteria` | `FilterQuery`\<`T`\> |
-| `callback?` | `Callback`\<`number`\> |
-
-#### Returns
-
-`Query`\<`number`, `T`, \{\}, `T`\>
-
-#### Inherited from
-
-Query.count
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2209
+node_modules/mongoose/types/query.d.ts:297
 
 ___
 
 ### countDocuments
 
-▸ **countDocuments**(`callback?`): `Query`\<`number`, `T`, \{\}, `T`\>
+▸ **countDocuments**(`criteria?`, `options?`): `Query`\<`number`, `T`, \{\}, `T`, ``"countDocuments"``\>
 
 Specifies this query as a `countDocuments` query.
 
@@ -623,11 +661,12 @@ Specifies this query as a `countDocuments` query.
 
 | Name | Type |
 | :------ | :------ |
-| `callback?` | `Callback`\<`number`\> |
+| `criteria?` | `FilterQuery`\<`T`\> |
+| `options?` | `QueryOptions`\<`T`\> |
 
 #### Returns
 
-`Query`\<`number`, `T`, \{\}, `T`\>
+`Query`\<`number`, `T`, \{\}, `T`, ``"countDocuments"``\>
 
 #### Inherited from
 
@@ -635,47 +674,26 @@ Query.countDocuments
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2212
-
-▸ **countDocuments**(`criteria`, `callback?`): `Query`\<`number`, `T`, \{\}, `T`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `criteria` | `FilterQuery`\<`T`\> |
-| `callback?` | `Callback`\<`number`\> |
-
-#### Returns
-
-`Query`\<`number`, `T`, \{\}, `T`\>
-
-#### Inherited from
-
-Query.countDocuments
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2213
+node_modules/mongoose/types/query.d.ts:300
 
 ___
 
 ### cursor
 
-▸ **cursor**(`options?`): `QueryCursor`\<`T`\>
+▸ **cursor**(`options?`): `Cursor`\<`unknown`, `QueryOptions`\<`T`\>\>
 
-Returns a wrapper around a [mongodb driver cursor](http://mongodb.github.io/node-mongodb-native/2.1/api/Cursor.html).
+Returns a wrapper around a [mongodb driver cursor](https://mongodb.github.io/node-mongodb-native/4.9/classes/FindCursor.html).
 A QueryCursor exposes a Streams3 interface, as well as a `.next()` function.
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `options?` | `any` |
+| `options?` | `QueryOptions`\<`T`\> |
 
 #### Returns
 
-`QueryCursor`\<`T`\>
+`Cursor`\<`unknown`, `QueryOptions`\<`T`\>\>
 
 #### Inherited from
 
@@ -683,13 +701,13 @@ Query.cursor
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2219
+node_modules/mongoose/types/query.d.ts:309
 
 ___
 
 ### deleteMany
 
-▸ **deleteMany**(`filter?`, `options?`, `callback?`): `Query`\<`any`, `T`, \{\}, `T`\>
+▸ **deleteMany**(`filter?`, `options?`): `Query`\<`any`, `T`, \{\}, `T`, ``"deleteMany"``\>
 
 Declare and/or execute this query as a `deleteMany()` operation. Works like
 remove, except it deletes _every_ document that matches `filter` in the
@@ -700,12 +718,11 @@ collection, regardless of the value of `single`.
 | Name | Type |
 | :------ | :------ |
 | `filter?` | `FilterQuery`\<`T`\> |
-| `options?` | `QueryOptions` |
-| `callback?` | `Callback`\<`any`\> |
+| `options?` | `QueryOptions`\<`T`\> |
 
 #### Returns
 
-`Query`\<`any`, `T`, \{\}, `T`\>
+`Query`\<`any`, `T`, \{\}, `T`, ``"deleteMany"``\>
 
 #### Inherited from
 
@@ -713,20 +730,19 @@ Query.deleteMany
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2226
+node_modules/mongoose/types/query.d.ts:316
 
-▸ **deleteMany**(`filter`, `callback`): `Query`\<`any`, `T`, \{\}, `T`\>
+▸ **deleteMany**(`filter`): `Query`\<`any`, `T`, \{\}, `T`, ``"deleteMany"``\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `filter` | `FilterQuery`\<`T`\> |
-| `callback` | `Callback`\<`any`\> |
 
 #### Returns
 
-`Query`\<`any`, `T`, \{\}, `T`\>
+`Query`\<`any`, `T`, \{\}, `T`, ``"deleteMany"``\>
 
 #### Inherited from
 
@@ -734,19 +750,13 @@ Query.deleteMany
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2227
+node_modules/mongoose/types/query.d.ts:320
 
-▸ **deleteMany**(`callback`): `Query`\<`any`, `T`, \{\}, `T`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `callback` | `Callback`\<`any`\> |
+▸ **deleteMany**(): `Query`\<`any`, `T`, \{\}, `T`, ``"deleteMany"``\>
 
 #### Returns
 
-`Query`\<`any`, `T`, \{\}, `T`\>
+`Query`\<`any`, `T`, \{\}, `T`, ``"deleteMany"``\>
 
 #### Inherited from
 
@@ -754,13 +764,13 @@ Query.deleteMany
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2228
+node_modules/mongoose/types/query.d.ts:327
 
 ___
 
 ### deleteOne
 
-▸ **deleteOne**(`filter?`, `options?`, `callback?`): `Query`\<`any`, `T`, \{\}, `T`\>
+▸ **deleteOne**(`filter?`, `options?`): `Query`\<`any`, `T`, \{\}, `T`, ``"deleteOne"``\>
 
 Declare and/or execute this query as a `deleteOne()` operation. Works like
 remove, except it deletes at most one document regardless of the `single`
@@ -771,12 +781,11 @@ option.
 | Name | Type |
 | :------ | :------ |
 | `filter?` | `FilterQuery`\<`T`\> |
-| `options?` | `QueryOptions` |
-| `callback?` | `Callback`\<`any`\> |
+| `options?` | `QueryOptions`\<`T`\> |
 
 #### Returns
 
-`Query`\<`any`, `T`, \{\}, `T`\>
+`Query`\<`any`, `T`, \{\}, `T`, ``"deleteOne"``\>
 
 #### Inherited from
 
@@ -784,20 +793,19 @@ Query.deleteOne
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2235
+node_modules/mongoose/types/query.d.ts:334
 
-▸ **deleteOne**(`filter`, `callback`): `Query`\<`any`, `T`, \{\}, `T`\>
+▸ **deleteOne**(`filter`): `Query`\<`any`, `T`, \{\}, `T`, ``"deleteOne"``\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `filter` | `FilterQuery`\<`T`\> |
-| `callback` | `Callback`\<`any`\> |
 
 #### Returns
 
-`Query`\<`any`, `T`, \{\}, `T`\>
+`Query`\<`any`, `T`, \{\}, `T`, ``"deleteOne"``\>
 
 #### Inherited from
 
@@ -805,19 +813,13 @@ Query.deleteOne
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2236
+node_modules/mongoose/types/query.d.ts:338
 
-▸ **deleteOne**(`callback`): `Query`\<`any`, `T`, \{\}, `T`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `callback` | `Callback`\<`any`\> |
+▸ **deleteOne**(): `Query`\<`any`, `T`, \{\}, `T`, ``"deleteOne"``\>
 
 #### Returns
 
-`Query`\<`any`, `T`, \{\}, `T`\>
+`Query`\<`any`, `T`, \{\}, `T`, ``"deleteOne"``\>
 
 #### Inherited from
 
@@ -825,27 +827,33 @@ Query.deleteOne
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2237
+node_modules/mongoose/types/query.d.ts:345
 
 ___
 
 ### distinct
 
-▸ **distinct**(`field`, `filter?`, `callback?`): `Query`\<`any`[], `T`, \{\}, `T`\>
+▸ **distinct**\<`DocKey`, `ResultType`\>(`field`, `filter?`): `Query`\<`DocKey` extends keyof `T` ? `Unpacked`\<`T`[`DocKey`]\> : `ResultType`[], `T`, \{\}, `T`, ``"distinct"``\>
 
 Creates a `distinct` query: returns the distinct values of the given `field` that match `filter`.
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `DocKey` | extends `string` |
+| `ResultType` | `unknown` |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `field` | `string` |
+| `field` | `DocKey` |
 | `filter?` | `FilterQuery`\<`T`\> |
-| `callback?` | `Callback`\<`number`\> |
 
 #### Returns
 
-`Query`\<`any`[], `T`, \{\}, `T`\>
+`Query`\<`DocKey` extends keyof `T` ? `Unpacked`\<`T`[`DocKey`]\> : `ResultType`[], `T`, \{\}, `T`, ``"distinct"``\>
 
 #### Inherited from
 
@@ -853,16 +861,43 @@ Query.distinct
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2240
+node_modules/mongoose/types/query.d.ts:348
 
 ___
 
 ### elemMatch
 
-▸ **elemMatch**(`val`): `this`
+▸ **elemMatch**\<`K`\>(`path`, `val`): `this`
 
 Specifies a `$elemMatch` query condition. When called with one argument, the most recent path passed to `where()` is used.
 
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | `string` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `path` | `K` |
+| `val` | `any` |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Query.elemMatch
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:354
+
+▸ **elemMatch**(`val`): `this`
+
 #### Parameters
 
 | Name | Type |
@@ -879,28 +914,7 @@ Query.elemMatch
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2243
-
-▸ **elemMatch**(`path`, `val`): `this`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `path` | `string` |
-| `val` | `any` |
-
-#### Returns
-
-`this`
-
-#### Inherited from
-
-Query.elemMatch
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2244
+node_modules/mongoose/types/query.d.ts:355
 
 ___
 
@@ -926,7 +940,7 @@ Query.equals
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2254
+node_modules/mongoose/types/query.d.ts:365
 
 ___
 
@@ -947,7 +961,7 @@ Query.error
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2250
+node_modules/mongoose/types/query.d.ts:361
 
 ▸ **error**(`val`): `this`
 
@@ -967,13 +981,13 @@ Query.error
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2251
+node_modules/mongoose/types/query.d.ts:362
 
 ___
 
 ### estimatedDocumentCount
 
-▸ **estimatedDocumentCount**(`options?`, `callback?`): `Query`\<`number`, `T`, \{\}, `T`\>
+▸ **estimatedDocumentCount**(`options?`): `Query`\<`number`, `T`, \{\}, `T`, ``"estimatedDocumentCount"``\>
 
 Creates a `estimatedDocumentCount` query: counts the number of documents in the collection.
 
@@ -981,12 +995,11 @@ Creates a `estimatedDocumentCount` query: counts the number of documents in the 
 
 | Name | Type |
 | :------ | :------ |
-| `options?` | `QueryOptions` |
-| `callback?` | `Callback`\<`number`\> |
+| `options?` | `QueryOptions`\<`T`\> |
 
 #### Returns
 
-`Query`\<`number`, `T`, \{\}, `T`\>
+`Query`\<`number`, `T`, \{\}, `T`, ``"estimatedDocumentCount"``\>
 
 #### Inherited from
 
@@ -994,7 +1007,7 @@ Query.estimatedDocumentCount
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2257
+node_modules/mongoose/types/query.d.ts:368
 
 ___
 
@@ -1014,56 +1027,43 @@ Query.exec
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2160
-
-▸ **exec**(`callback?`): `void`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `callback?` | `Callback`\<`unknown`\> |
-
-#### Returns
-
-`void`
-
-#### Inherited from
-
-Query.exec
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2161
-
-▸ **exec**(`callback?`): `any`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `callback?` | `Callback`\<`unknown`\> |
-
-#### Returns
-
-`any`
-
-#### Inherited from
-
-Query.exec
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2163
+node_modules/mongoose/types/query.d.ts:234
 
 ___
 
 ### exists
 
-▸ **exists**(`val`): `this`
+▸ **exists**\<`K`\>(`path`, `val`): `this`
 
 Specifies a `$exists` query condition. When called with one argument, the most recent path passed to `where()` is used.
 
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | `string` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `path` | `K` |
+| `val` | `boolean` |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Query.exists
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:377
+
+▸ **exists**(`val`): `this`
+
 #### Parameters
 
 | Name | Type |
@@ -1080,28 +1080,7 @@ Query.exists
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2260
-
-▸ **exists**(`path`, `val`): `this`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `path` | `string` |
-| `val` | `boolean` |
-
-#### Returns
-
-`this`
-
-#### Inherited from
-
-Query.exists
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2261
+node_modules/mongoose/types/query.d.ts:378
 
 ___
 
@@ -1109,7 +1088,7 @@ ___
 
 ▸ **explain**(`verbose?`): `this`
 
-Sets the [`explain` option](https://docs.mongodb.com/manual/reference/method/cursor.explain/),
+Sets the [`explain` option](https://www.mongodb.com/docs/manual/reference/method/cursor.explain/),
 which makes this query return detailed execution stats instead of the actual
 query result. This method is useful for determining what index your queries
 use.
@@ -1118,7 +1097,7 @@ use.
 
 | Name | Type |
 | :------ | :------ |
-| `verbose?` | `string` |
+| `verbose?` | `ExplainVerbosityLike` |
 
 #### Returns
 
@@ -1130,13 +1109,13 @@ Query.explain
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2269
+node_modules/mongoose/types/query.d.ts:386
 
 ___
 
 ### find
 
-▸ **find**(`callback?`): `Query`\<`T`[], `T`, \{\}, `T`\>
+▸ **find**(`filter`, `projection?`, `options?`): `Query`\<`T`[], `T`, \{\}, `T`, ``"find"``\>
 
 Creates a `find` query: gets a list of documents that match `filter`.
 
@@ -1144,11 +1123,13 @@ Creates a `find` query: gets a list of documents that match `filter`.
 
 | Name | Type |
 | :------ | :------ |
-| `callback?` | `Callback`\<`T`[]\> |
+| `filter` | `FilterQuery`\<`T`\> |
+| `projection?` | ``null`` \| `ProjectionType`\<`T`\> |
+| `options?` | ``null`` \| `QueryOptions`\<`T`\> |
 
 #### Returns
 
-`Query`\<`T`[], `T`, \{\}, `T`\>
+`Query`\<`T`[], `T`, \{\}, `T`, ``"find"``\>
 
 #### Inherited from
 
@@ -1156,20 +1137,20 @@ Query.find
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2272
+node_modules/mongoose/types/query.d.ts:389
 
-▸ **find**(`filter`, `callback?`): `Query`\<`T`[], `T`, \{\}, `T`\>
+▸ **find**(`filter`, `projection?`): `Query`\<`T`[], `T`, \{\}, `T`, ``"find"``\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `filter` | `FilterQuery`\<`T`\> |
-| `callback?` | `Callback`\<`T`[]\> |
+| `projection?` | ``null`` \| `ProjectionType`\<`T`\> |
 
 #### Returns
 
-`Query`\<`T`[], `T`, \{\}, `T`\>
+`Query`\<`T`[], `T`, \{\}, `T`, ``"find"``\>
 
 #### Inherited from
 
@@ -1177,22 +1158,19 @@ Query.find
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2273
+node_modules/mongoose/types/query.d.ts:394
 
-▸ **find**(`filter`, `projection?`, `options?`, `callback?`): `Query`\<`T`[], `T`, \{\}, `T`\>
+▸ **find**(`filter`): `Query`\<`T`[], `T`, \{\}, `T`, ``"find"``\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `filter` | `FilterQuery`\<`T`\> |
-| `projection?` | `any` |
-| `options?` | ``null`` \| `QueryOptions` |
-| `callback?` | `Callback`\<`T`[]\> |
 
 #### Returns
 
-`Query`\<`T`[], `T`, \{\}, `T`\>
+`Query`\<`T`[], `T`, \{\}, `T`, ``"find"``\>
 
 #### Inherited from
 
@@ -1200,13 +1178,96 @@ Query.find
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2274
+node_modules/mongoose/types/query.d.ts:398
+
+▸ **find**(): `Query`\<`T`[], `T`, \{\}, `T`, ``"find"``\>
+
+#### Returns
+
+`Query`\<`T`[], `T`, \{\}, `T`, ``"find"``\>
+
+#### Inherited from
+
+Query.find
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:401
+
+___
+
+### findById
+
+▸ **findById**(`id`, `projection?`, `options?`): `Query`\<``null`` \| `T`, `T`, \{\}, `T`, ``"findOne"``\>
+
+Declares the query a findById operation. When executed, returns the document with the given `_id`.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `id` | `any` |
+| `projection?` | ``null`` \| `ProjectionType`\<`T`\> |
+| `options?` | ``null`` \| `QueryOptions`\<`T`\> |
+
+#### Returns
+
+`Query`\<``null`` \| `T`, `T`, \{\}, `T`, ``"findOne"``\>
+
+#### Inherited from
+
+Query.findById
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:441
+
+▸ **findById**(`id`, `projection?`): `Query`\<``null`` \| `T`, `T`, \{\}, `T`, ``"findOne"``\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `id` | `any` |
+| `projection?` | ``null`` \| `ProjectionType`\<`T`\> |
+
+#### Returns
+
+`Query`\<``null`` \| `T`, `T`, \{\}, `T`, ``"findOne"``\>
+
+#### Inherited from
+
+Query.findById
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:446
+
+▸ **findById**(`id`): `Query`\<``null`` \| `T`, `T`, \{\}, `T`, ``"findOne"``\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `id` | `any` |
+
+#### Returns
+
+`Query`\<``null`` \| `T`, `T`, \{\}, `T`, ``"findOne"``\>
+
+#### Inherited from
+
+Query.findById
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:450
 
 ___
 
 ### findByIdAndDelete
 
-▸ **findByIdAndDelete**(`id?`, `options?`, `callback?`): `Query`\<``null`` \| `T`, `T`, \{\}, `T`\>
+▸ **findByIdAndDelete**(`id`, `options`): `Query`\<`ModifyResult`\<`T`\>, `T`, \{\}, `T`, ``"findOneAndDelete"``\>
 
 Creates a `findByIdAndDelete` query, filtering by the given `_id`.
 
@@ -1214,13 +1275,12 @@ Creates a `findByIdAndDelete` query, filtering by the given `_id`.
 
 | Name | Type |
 | :------ | :------ |
-| `id?` | `any` |
-| `options?` | ``null`` \| `QueryOptions` |
-| `callback?` | (`err`: `CallbackError`, `doc`: ``null`` \| `T`, `res`: `any`) =\> `void` |
+| `id` | `any` |
+| `options` | `QueryOptions`\<`T`\> & \{ `includeResultMetadata`: ``true``  \} |
 
 #### Returns
 
-`Query`\<``null`` \| `T`, `T`, \{\}, `T`\>
+`Query`\<`ModifyResult`\<`T`\>, `T`, \{\}, `T`, ``"findOneAndDelete"``\>
 
 #### Inherited from
 
@@ -1228,13 +1288,34 @@ Query.findByIdAndDelete
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2291
+node_modules/mongoose/types/query.d.ts:455
+
+▸ **findByIdAndDelete**(`id?`, `options?`): `Query`\<``null`` \| `T`, `T`, \{\}, `T`, ``"findOneAndDelete"``\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `id?` | `any` |
+| `options?` | ``null`` \| `QueryOptions`\<`T`\> |
+
+#### Returns
+
+`Query`\<``null`` \| `T`, `T`, \{\}, `T`, ``"findOneAndDelete"``\>
+
+#### Inherited from
+
+Query.findByIdAndDelete
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:459
 
 ___
 
 ### findByIdAndUpdate
 
-▸ **findByIdAndUpdate**(`id`, `update`, `options`, `callback?`): `Query`\<`FindAndModifyWriteOpResultObject`\<`T`\>, `T`, \{\}, `T`\>
+▸ **findByIdAndUpdate**(`id`, `update`, `options`): `Query`\<`any`, `T`, \{\}, `T`, ``"findOneAndUpdate"``\>
 
 Creates a `findOneAndUpdate` query, filtering by the given `_id`.
 
@@ -1243,13 +1324,12 @@ Creates a `findOneAndUpdate` query, filtering by the given `_id`.
 | Name | Type |
 | :------ | :------ |
 | `id` | `any` |
-| `update` | `UpdateWithAggregationPipeline` \| `UpdateQuery`\<`T`\> |
-| `options` | `QueryOptions` & \{ `rawResult`: ``true``  \} |
-| `callback?` | (`err`: `CallbackError`, `doc`: `FindAndModifyWriteOpResultObject`\<`T`\>, `res`: `any`) =\> `void` |
+| `update` | `UpdateQuery`\<`T`\> |
+| `options` | `QueryOptions`\<`T`\> & \{ `includeResultMetadata`: ``true``  \} |
 
 #### Returns
 
-`Query`\<`FindAndModifyWriteOpResultObject`\<`T`\>, `T`, \{\}, `T`\>
+`Query`\<`any`, `T`, \{\}, `T`, ``"findOneAndUpdate"``\>
 
 #### Inherited from
 
@@ -1257,22 +1337,21 @@ Query.findByIdAndUpdate
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2294
+node_modules/mongoose/types/query.d.ts:465
 
-▸ **findByIdAndUpdate**(`id`, `update`, `options`, `callback?`): `Query`\<`T`, `T`, \{\}, `T`\>
+▸ **findByIdAndUpdate**(`id`, `update`, `options`): `Query`\<`T`, `T`, \{\}, `T`, ``"findOneAndUpdate"``\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `id` | `any` |
-| `update` | `UpdateWithAggregationPipeline` \| `UpdateQuery`\<`T`\> |
-| `options` | `QueryOptions` & \{ `upsert`: ``true``  \} & `ReturnsNewDoc` |
-| `callback?` | (`err`: `CallbackError`, `doc`: `T`, `res`: `any`) =\> `void` |
+| `update` | `UpdateQuery`\<`T`\> |
+| `options` | `QueryOptions`\<`T`\> & \{ `upsert`: ``true``  \} & `ReturnsNewDoc` |
 
 #### Returns
 
-`Query`\<`T`, `T`, \{\}, `T`\>
+`Query`\<`T`, `T`, \{\}, `T`, ``"findOneAndUpdate"``\>
 
 #### Inherited from
 
@@ -1280,22 +1359,21 @@ Query.findByIdAndUpdate
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2295
+node_modules/mongoose/types/query.d.ts:470
 
-▸ **findByIdAndUpdate**(`id?`, `update?`, `options?`, `callback?`): `Query`\<``null`` \| `T`, `T`, \{\}, `T`\>
+▸ **findByIdAndUpdate**(`id?`, `update?`, `options?`): `Query`\<``null`` \| `T`, `T`, \{\}, `T`, ``"findOneAndUpdate"``\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `id?` | `any` |
-| `update?` | `UpdateWithAggregationPipeline` \| `UpdateQuery`\<`T`\> |
-| `options?` | ``null`` \| `QueryOptions` |
-| `callback?` | (`err`: `CallbackError`, `doc`: ``null`` \| `T`, `res`: `any`) =\> `void` |
+| `update?` | `UpdateQuery`\<`T`\> |
+| `options?` | ``null`` \| `QueryOptions`\<`T`\> |
 
 #### Returns
 
-`Query`\<``null`` \| `T`, `T`, \{\}, `T`\>
+`Query`\<``null`` \| `T`, `T`, \{\}, `T`, ``"findOneAndUpdate"``\>
 
 #### Inherited from
 
@@ -1303,28 +1381,48 @@ Query.findByIdAndUpdate
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2296
+node_modules/mongoose/types/query.d.ts:475
+
+▸ **findByIdAndUpdate**(`id`, `update`): `Query`\<``null`` \| `T`, `T`, \{\}, `T`, ``"findOneAndUpdate"``\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `id` | `any` |
+| `update` | `UpdateQuery`\<`T`\> |
+
+#### Returns
+
+`Query`\<``null`` \| `T`, `T`, \{\}, `T`, ``"findOneAndUpdate"``\>
+
+#### Inherited from
+
+Query.findByIdAndUpdate
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:480
 
 ___
 
 ### findOne
 
-▸ **findOne**(`filter?`, `projection?`, `options?`, `callback?`): `Query`\<``null`` \| `T`, `T`, \{\}, `T`\>
+▸ **findOne**(`filter?`, `projection?`, `options?`): `Query`\<``null`` \| `T`, `T`, \{\}, `T`, ``"findOne"``\>
 
-Declares the query a findOne operation. When executed, the first found document is passed to the callback.
+Declares the query a findOne operation. When executed, returns the first found document.
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `filter?` | `FilterQuery`\<`T`\> |
-| `projection?` | `any` |
-| `options?` | ``null`` \| `QueryOptions` |
-| `callback?` | `Callback`\<``null`` \| `T`\> |
+| `projection?` | ``null`` \| `ProjectionType`\<`T`\> |
+| `options?` | ``null`` \| `QueryOptions`\<`T`\> |
 
 #### Returns
 
-`Query`\<``null`` \| `T`, `T`, \{\}, `T`\>
+`Query`\<``null`` \| `T`, `T`, \{\}, `T`, ``"findOne"``\>
 
 #### Inherited from
 
@@ -1332,13 +1430,54 @@ Query.findOne
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2277
+node_modules/mongoose/types/query.d.ts:404
+
+▸ **findOne**(`filter?`, `projection?`): `Query`\<``null`` \| `T`, `T`, \{\}, `T`, ``"findOne"``\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `filter?` | `FilterQuery`\<`T`\> |
+| `projection?` | ``null`` \| `ProjectionType`\<`T`\> |
+
+#### Returns
+
+`Query`\<``null`` \| `T`, `T`, \{\}, `T`, ``"findOne"``\>
+
+#### Inherited from
+
+Query.findOne
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:409
+
+▸ **findOne**(`filter?`): `Query`\<``null`` \| `T`, `T`, \{\}, `T`, ``"findOne"``\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `filter?` | `FilterQuery`\<`T`\> |
+
+#### Returns
+
+`Query`\<``null`` \| `T`, `T`, \{\}, `T`, ``"findOne"``\>
+
+#### Inherited from
+
+Query.findOne
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:413
 
 ___
 
 ### findOneAndDelete
 
-▸ **findOneAndDelete**(`filter?`, `options?`, `callback?`): `Query`\<``null`` \| `T`, `T`, \{\}, `T`\>
+▸ **findOneAndDelete**(`filter?`, `options?`): `Query`\<``null`` \| `T`, `T`, \{\}, `T`, ``"findOneAndDelete"``\>
 
 Creates a `findOneAndDelete` query: atomically finds the given document, deletes it, and returns the document as it was before deletion.
 
@@ -1347,12 +1486,11 @@ Creates a `findOneAndDelete` query: atomically finds the given document, deletes
 | Name | Type |
 | :------ | :------ |
 | `filter?` | `FilterQuery`\<`T`\> |
-| `options?` | ``null`` \| `QueryOptions` |
-| `callback?` | (`err`: `CallbackError`, `doc`: ``null`` \| `T`, `res`: `any`) =\> `void` |
+| `options?` | ``null`` \| `QueryOptions`\<`T`\> |
 
 #### Returns
 
-`Query`\<``null`` \| `T`, `T`, \{\}, `T`\>
+`Query`\<``null`` \| `T`, `T`, \{\}, `T`, ``"findOneAndDelete"``\>
 
 #### Inherited from
 
@@ -1360,41 +1498,13 @@ Query.findOneAndDelete
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2280
-
-___
-
-### findOneAndRemove
-
-▸ **findOneAndRemove**(`filter?`, `options?`, `callback?`): `Query`\<``null`` \| `T`, `T`, \{\}, `T`\>
-
-Creates a `findOneAndRemove` query: atomically finds the given document and deletes it.
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `filter?` | `FilterQuery`\<`T`\> |
-| `options?` | ``null`` \| `QueryOptions` |
-| `callback?` | (`err`: `CallbackError`, `doc`: ``null`` \| `T`, `res`: `any`) =\> `void` |
-
-#### Returns
-
-`Query`\<``null`` \| `T`, `T`, \{\}, `T`\>
-
-#### Inherited from
-
-Query.findOneAndRemove
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2283
+node_modules/mongoose/types/query.d.ts:418
 
 ___
 
 ### findOneAndUpdate
 
-▸ **findOneAndUpdate**(`filter`, `update`, `options`, `callback?`): `Query`\<`FindAndModifyWriteOpResultObject`\<`T`\>, `T`, \{\}, `T`\>
+▸ **findOneAndUpdate**(`filter`, `update`, `options`): `Query`\<`ModifyResult`\<`T`\>, `T`, \{\}, `T`, ``"findOneAndUpdate"``\>
 
 Creates a `findOneAndUpdate` query: atomically find the first document that matches `filter` and apply `update`.
 
@@ -1403,13 +1513,12 @@ Creates a `findOneAndUpdate` query: atomically find the first document that matc
 | Name | Type |
 | :------ | :------ |
 | `filter` | `FilterQuery`\<`T`\> |
-| `update` | `UpdateWithAggregationPipeline` \| `UpdateQuery`\<`T`\> |
-| `options` | `QueryOptions` & \{ `rawResult`: ``true``  \} |
-| `callback?` | (`err`: `CallbackError`, `doc`: `FindAndModifyWriteOpResultObject`\<`T`\>, `res`: `any`) =\> `void` |
+| `update` | `UpdateQuery`\<`T`\> |
+| `options` | `QueryOptions`\<`T`\> & \{ `includeResultMetadata`: ``true``  \} |
 
 #### Returns
 
-`Query`\<`FindAndModifyWriteOpResultObject`\<`T`\>, `T`, \{\}, `T`\>
+`Query`\<`ModifyResult`\<`T`\>, `T`, \{\}, `T`, ``"findOneAndUpdate"``\>
 
 #### Inherited from
 
@@ -1417,22 +1526,21 @@ Query.findOneAndUpdate
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2286
+node_modules/mongoose/types/query.d.ts:424
 
-▸ **findOneAndUpdate**(`filter`, `update`, `options`, `callback?`): `Query`\<`T`, `T`, \{\}, `T`\>
+▸ **findOneAndUpdate**(`filter`, `update`, `options`): `Query`\<`T`, `T`, \{\}, `T`, ``"findOneAndUpdate"``\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `filter` | `FilterQuery`\<`T`\> |
-| `update` | `UpdateWithAggregationPipeline` \| `UpdateQuery`\<`T`\> |
-| `options` | `QueryOptions` & \{ `upsert`: ``true``  \} & `ReturnsNewDoc` |
-| `callback?` | (`err`: `CallbackError`, `doc`: `T`, `res`: `any`) =\> `void` |
+| `update` | `UpdateQuery`\<`T`\> |
+| `options` | `QueryOptions`\<`T`\> & \{ `upsert`: ``true``  \} & `ReturnsNewDoc` |
 
 #### Returns
 
-`Query`\<`T`, `T`, \{\}, `T`\>
+`Query`\<`T`, `T`, \{\}, `T`, ``"findOneAndUpdate"``\>
 
 #### Inherited from
 
@@ -1440,22 +1548,21 @@ Query.findOneAndUpdate
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2287
+node_modules/mongoose/types/query.d.ts:429
 
-▸ **findOneAndUpdate**(`filter?`, `update?`, `options?`, `callback?`): `Query`\<``null`` \| `T`, `T`, \{\}, `T`\>
+▸ **findOneAndUpdate**(`filter?`, `update?`, `options?`): `Query`\<``null`` \| `T`, `T`, \{\}, `T`, ``"findOneAndUpdate"``\>
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `filter?` | `FilterQuery`\<`T`\> |
-| `update?` | `UpdateWithAggregationPipeline` \| `UpdateQuery`\<`T`\> |
-| `options?` | ``null`` \| `QueryOptions` |
-| `callback?` | (`err`: `CallbackError`, `doc`: ``null`` \| `T`, `res`: `any`) =\> `void` |
+| `update?` | `UpdateQuery`\<`T`\> |
+| `options?` | ``null`` \| `QueryOptions`\<`T`\> |
 
 #### Returns
 
-`Query`\<``null`` \| `T`, `T`, \{\}, `T`\>
+`Query`\<``null`` \| `T`, `T`, \{\}, `T`, ``"findOneAndUpdate"``\>
 
 #### Inherited from
 
@@ -1463,7 +1570,7 @@ Query.findOneAndUpdate
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2288
+node_modules/mongoose/types/query.d.ts:434
 
 ___
 
@@ -1491,7 +1598,7 @@ Query.geometry
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2299
+node_modules/mongoose/types/query.d.ts:486
 
 ___
 
@@ -1519,7 +1626,7 @@ Query.get
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2306
+node_modules/mongoose/types/query.d.ts:493
 
 ___
 
@@ -1539,19 +1646,19 @@ Query.getFilter
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2309
+node_modules/mongoose/types/query.d.ts:496
 
 ___
 
 ### getOptions
 
-▸ **getOptions**(): `QueryOptions`
+▸ **getOptions**(): `QueryOptions`\<`T`\>
 
 Gets query options.
 
 #### Returns
 
-`QueryOptions`
+`QueryOptions`\<`T`\>
 
 #### Inherited from
 
@@ -1559,7 +1666,7 @@ Query.getOptions
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2312
+node_modules/mongoose/types/query.d.ts:499
 
 ___
 
@@ -1579,7 +1686,7 @@ Query.getPopulatedPaths
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2315
+node_modules/mongoose/types/query.d.ts:502
 
 ___
 
@@ -1599,7 +1706,7 @@ Query.getQuery
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2318
+node_modules/mongoose/types/query.d.ts:505
 
 ___
 
@@ -1619,16 +1726,43 @@ Query.getUpdate
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2321
+node_modules/mongoose/types/query.d.ts:508
 
 ___
 
 ### gt
 
-▸ **gt**(`val`): `this`
+▸ **gt**\<`K`\>(`path`, `val`): `this`
 
 Specifies a `$gt` query condition. When called with one argument, the most recent path passed to `where()` is used.
 
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | `string` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `path` | `K` |
+| `val` | `any` |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Query.gt
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:511
+
+▸ **gt**(`val`): `this`
+
 #### Parameters
 
 | Name | Type |
@@ -1645,37 +1779,43 @@ Query.gt
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2324
-
-▸ **gt**(`path`, `val`): `this`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `path` | `string` |
-| `val` | `number` |
-
-#### Returns
-
-`this`
-
-#### Inherited from
-
-Query.gt
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2325
+node_modules/mongoose/types/query.d.ts:512
 
 ___
 
 ### gte
 
-▸ **gte**(`val`): `this`
+▸ **gte**\<`K`\>(`path`, `val`): `this`
 
 Specifies a `$gte` query condition. When called with one argument, the most recent path passed to `where()` is used.
 
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | `string` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `path` | `K` |
+| `val` | `any` |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Query.gte
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:515
+
+▸ **gte**(`val`): `this`
+
 #### Parameters
 
 | Name | Type |
@@ -1692,28 +1832,7 @@ Query.gte
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2328
-
-▸ **gte**(`path`, `val`): `this`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `path` | `string` |
-| `val` | `number` |
-
-#### Returns
-
-`this`
-
-#### Inherited from
-
-Query.gte
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2329
+node_modules/mongoose/types/query.d.ts:516
 
 ___
 
@@ -1739,16 +1858,43 @@ Query.hint
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2332
+node_modules/mongoose/types/query.d.ts:519
 
 ___
 
 ### in
 
-▸ **in**(`val`): `this`
+▸ **in**\<`K`\>(`path`, `val`): `this`
 
 Specifies an `$in` query condition. When called with one argument, the most recent path passed to `where()` is used.
 
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | `string` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `path` | `K` |
+| `val` | `any`[] |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Query.in
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:522
+
+▸ **in**(`val`): `this`
+
 #### Parameters
 
 | Name | Type |
@@ -1765,28 +1911,7 @@ Query.in
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2335
-
-▸ **in**(`path`, `val`): `this`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `path` | `string` |
-| `val` | `any`[] |
-
-#### Returns
-
-`this`
-
-#### Inherited from
-
-Query.in
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2336
+node_modules/mongoose/types/query.d.ts:523
 
 ___
 
@@ -1812,7 +1937,7 @@ Query.intersects
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2339
+node_modules/mongoose/types/query.d.ts:526
 
 ___
 
@@ -1838,13 +1963,13 @@ Query.j
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2342
+node_modules/mongoose/types/query.d.ts:529
 
 ___
 
 ### lean
 
-▸ **lean**\<`LeanResultType`\>(`val?`): `Query`\<`LeanResultType`, `T`, \{\}, `T`\>
+▸ **lean**\<`LeanResultType`\>(`val?`): `Query`\<`LeanResultType`, `T`, \{\}, `T`, ``"find"``\>
 
 Sets the lean option.
 
@@ -1852,7 +1977,7 @@ Sets the lean option.
 
 | Name | Type |
 | :------ | :------ |
-| `LeanResultType` | `T` extends `Document`\<`any`, `any`, `any`\> ? `unknown` : `unknown` |
+| `LeanResultType` | `Require_id`\<`FlattenMaps`\<`T`\>\> |
 
 #### Parameters
 
@@ -1862,7 +1987,7 @@ Sets the lean option.
 
 #### Returns
 
-`Query`\<`LeanResultType`, `T`, \{\}, `T`\>
+`Query`\<`LeanResultType`, `T`, \{\}, `T`, ``"find"``\>
 
 #### Inherited from
 
@@ -1870,7 +1995,7 @@ Query.lean
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2345
+node_modules/mongoose/types/query.d.ts:532
 
 ___
 
@@ -1896,16 +2021,43 @@ Query.limit
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2348
+node_modules/mongoose/types/query.d.ts:547
 
 ___
 
 ### lt
 
-▸ **lt**(`val`): `this`
+▸ **lt**\<`K`\>(`path`, `val`): `this`
 
 Specifies a `$lt` query condition. When called with one argument, the most recent path passed to `where()` is used.
 
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | `string` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `path` | `K` |
+| `val` | `any` |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Query.lt
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:550
+
+▸ **lt**(`val`): `this`
+
 #### Parameters
 
 | Name | Type |
@@ -1922,114 +2074,66 @@ Query.lt
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2351
-
-▸ **lt**(`path`, `val`): `this`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `path` | `string` |
-| `val` | `number` |
-
-#### Returns
-
-`this`
-
-#### Inherited from
-
-Query.lt
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2352
+node_modules/mongoose/types/query.d.ts:551
 
 ___
 
 ### lte
 
-▸ **lte**(`val`): `this`
+▸ **lte**\<`K`\>(`path`, `val`): `this`
 
 Specifies a `$lte` query condition. When called with one argument, the most recent path passed to `where()` is used.
 
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `val` | `number` |
-
-#### Returns
-
-`this`
-
-#### Inherited from
-
-Query.lte
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2355
-
-▸ **lte**(`path`, `val`): `this`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `path` | `string` |
-| `val` | `number` |
-
-#### Returns
-
-`this`
-
-#### Inherited from
-
-Query.lte
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2356
-
-___
-
-### map
-
-▸ **map**\<`MappedType`\>(`fn`): `Query`\<`MappedType`, `T`, \{\}, `T`\>
-
-Runs a function `fn` and treats the return value of `fn` as the new value
-for the query to resolve to.
-
 #### Type parameters
 
-| Name |
-| :------ |
-| `MappedType` |
+| Name | Type |
+| :------ | :------ |
+| `K` | `string` |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `fn` | (`doc`: `unknown`) =\> `MappedType` |
+| `path` | `K` |
+| `val` | `any` |
 
 #### Returns
 
-`Query`\<`MappedType`, `T`, \{\}, `T`\>
+`this`
 
 #### Inherited from
 
-Query.map
+Query.lte
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2362
+node_modules/mongoose/types/query.d.ts:554
+
+▸ **lte**(`val`): `this`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `val` | `number` |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Query.lte
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:555
 
 ___
 
 ### maxDistance
 
-▸ **maxDistance**(`val`): `this`
+▸ **maxDistance**(`path`, `val`): `this`
 
 Specifies an `$maxDistance` query condition. When called with one argument, the most recent path passed to `where()` is used.
 
@@ -2037,26 +2141,6 @@ Specifies an `$maxDistance` query condition. When called with one argument, the 
 
 | Name | Type |
 | :------ | :------ |
-| `val` | `number` |
-
-#### Returns
-
-`this`
-
-#### Inherited from
-
-Query.maxDistance
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2365
-
-▸ **maxDistance**(`path`, `val`): `this`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
 | `path` | `string` |
 | `val` | `number` |
 
@@ -2070,15 +2154,9 @@ Query.maxDistance
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2366
+node_modules/mongoose/types/query.d.ts:564
 
-___
-
-### maxScan
-
-▸ **maxScan**(`val`): `this`
-
-Specifies the maxScan option.
+▸ **maxDistance**(`val`): `this`
 
 #### Parameters
 
@@ -2092,11 +2170,11 @@ Specifies the maxScan option.
 
 #### Inherited from
 
-Query.maxScan
+Query.maxDistance
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2369
+node_modules/mongoose/types/query.d.ts:565
 
 ___
 
@@ -2104,7 +2182,7 @@ ___
 
 ▸ **maxTimeMS**(`ms`): `this`
 
-Sets the [maxTimeMS](https://docs.mongodb.com/manual/reference/method/cursor.maxTimeMS/)
+Sets the [maxTimeMS](https://www.mongodb.com/docs/manual/reference/method/cursor.maxTimeMS/)
 option. This will tell the MongoDB server to abort if the query or write op
 has been running for more than `ms` milliseconds.
 
@@ -2124,7 +2202,7 @@ Query.maxTimeMS
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2376
+node_modules/mongoose/types/query.d.ts:572
 
 ___
 
@@ -2138,7 +2216,7 @@ Merges another Query or conditions object into this one.
 
 | Name | Type |
 | :------ | :------ |
-| `source` | `Query`\<`any`, `any`, \{\}, `any`\> \| `FilterQuery`\<`T`\> |
+| `source` | `Query`\<`any`, `any`, \{\}, `any`, ``"find"``\> \| `FilterQuery`\<`T`\> |
 
 #### Returns
 
@@ -2150,16 +2228,43 @@ Query.merge
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2379
+node_modules/mongoose/types/query.d.ts:575
 
 ___
 
 ### mod
 
-▸ **mod**(`val`): `this`
+▸ **mod**\<`K`\>(`path`, `val`): `this`
 
 Specifies a `$mod` condition, filters documents for documents whose `path` property is a number that is equal to `remainder` modulo `divisor`.
 
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | `string` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `path` | `K` |
+| `val` | `number` |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Query.mod
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:578
+
+▸ **mod**(`val`): `this`
+
 #### Parameters
 
 | Name | Type |
@@ -2176,34 +2281,13 @@ Query.mod
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2382
-
-▸ **mod**(`path`, `val`): `this`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `path` | `string` |
-| `val` | `number`[] |
-
-#### Returns
-
-`this`
-
-#### Inherited from
-
-Query.mod
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2383
+node_modules/mongoose/types/query.d.ts:579
 
 ___
 
 ### mongooseOptions
 
-▸ **mongooseOptions**(`val?`): `MongooseQueryOptions`
+▸ **mongooseOptions**(`val?`): `MongooseQueryOptions`\<`unknown`, ``"timestamps"`` \| `MongooseBaseQueryOptionKeys` \| ``"lean"``\>
 
 Getter/setter around the current mongoose-specific options for this query
 Below are the current Mongoose-specific options.
@@ -2212,11 +2296,11 @@ Below are the current Mongoose-specific options.
 
 | Name | Type |
 | :------ | :------ |
-| `val?` | `MongooseQueryOptions` |
+| `val?` | `MongooseQueryOptions`\<`unknown`, ``"timestamps"`` \| `MongooseBaseQueryOptionKeys` \| ``"lean"``\> |
 
 #### Returns
 
-`MongooseQueryOptions`
+`MongooseQueryOptions`\<`unknown`, ``"timestamps"`` \| `MongooseBaseQueryOptionKeys` \| ``"lean"``\>
 
 #### Inherited from
 
@@ -2224,16 +2308,43 @@ Query.mongooseOptions
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2392
+node_modules/mongoose/types/query.d.ts:588
 
 ___
 
 ### ne
 
-▸ **ne**(`val`): `this`
+▸ **ne**\<`K`\>(`path`, `val`): `this`
 
 Specifies a `$ne` query condition. When called with one argument, the most recent path passed to `where()` is used.
 
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | `string` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `path` | `K` |
+| `val` | `any` |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Query.ne
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:591
+
+▸ **ne**(`val`): `this`
+
 #### Parameters
 
 | Name | Type |
@@ -2250,37 +2361,43 @@ Query.ne
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2395
-
-▸ **ne**(`path`, `val`): `this`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `path` | `string` |
-| `val` | `any` |
-
-#### Returns
-
-`this`
-
-#### Inherited from
-
-Query.ne
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2396
+node_modules/mongoose/types/query.d.ts:592
 
 ___
 
 ### near
 
-▸ **near**(`val`): `this`
+▸ **near**\<`K`\>(`path`, `val`): `this`
 
 Specifies a `$near` or `$nearSphere` condition
 
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | `string` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `path` | `K` |
+| `val` | `any` |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Query.near
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:595
+
+▸ **near**(`val`): `this`
+
 #### Parameters
 
 | Name | Type |
@@ -2297,37 +2414,43 @@ Query.near
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2399
-
-▸ **near**(`path`, `val`): `this`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `path` | `string` |
-| `val` | `any` |
-
-#### Returns
-
-`this`
-
-#### Inherited from
-
-Query.near
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2400
+node_modules/mongoose/types/query.d.ts:596
 
 ___
 
 ### nin
 
-▸ **nin**(`val`): `this`
+▸ **nin**\<`K`\>(`path`, `val`): `this`
 
 Specifies an `$nin` query condition. When called with one argument, the most recent path passed to `where()` is used.
 
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | `string` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `path` | `K` |
+| `val` | `any`[] |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Query.nin
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:599
+
+▸ **nin**(`val`): `this`
+
 #### Parameters
 
 | Name | Type |
@@ -2344,28 +2467,7 @@ Query.nin
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2403
-
-▸ **nin**(`path`, `val`): `this`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `path` | `string` |
-| `val` | `any`[] |
-
-#### Returns
-
-`this`
-
-#### Inherited from
-
-Query.nin
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2404
+node_modules/mongoose/types/query.d.ts:600
 
 ___
 
@@ -2391,7 +2493,7 @@ Query.nor
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2407
+node_modules/mongoose/types/query.d.ts:603
 
 ___
 
@@ -2417,13 +2519,13 @@ Query.or
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2410
+node_modules/mongoose/types/query.d.ts:606
 
 ___
 
 ### orFail
 
-▸ **orFail**(`err?`): `Query`\<\{\}, `T`, \{\}, `T`\>
+▸ **orFail**(`err?`): `Query`\<\{\}, `T`, \{\}, `T`, ``"find"``\>
 
 Make this query throw an error if no documents match the given `filter`.
 This is handy for integrating with async/await, because `orFail()` saves you
@@ -2437,7 +2539,7 @@ an extra `if` statement to check if no document was found.
 
 #### Returns
 
-`Query`\<\{\}, `T`, \{\}, `T`\>
+`Query`\<\{\}, `T`, \{\}, `T`, ``"find"``\>
 
 #### Inherited from
 
@@ -2445,35 +2547,15 @@ Query.orFail
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2417
+node_modules/mongoose/types/query.d.ts:613
 
 ___
 
 ### polygon
 
-▸ **polygon**(`...coordinatePairs`): `this`
+▸ **polygon**(`path`, `...coordinatePairs`): `this`
 
 Specifies a `$polygon` condition
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `...coordinatePairs` | `number`[][] |
-
-#### Returns
-
-`this`
-
-#### Inherited from
-
-Query.polygon
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2420
-
-▸ **polygon**(`path`, `...coordinatePairs`): `this`
 
 #### Parameters
 
@@ -2492,28 +2574,54 @@ Query.polygon
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2421
+node_modules/mongoose/types/query.d.ts:616
+
+▸ **polygon**(`...coordinatePairs`): `this`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `...coordinatePairs` | `number`[][] |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Query.polygon
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:617
 
 ___
 
 ### populate
 
-▸ **populate**(`path`, `select?`, `model?`, `match?`): `this`
+▸ **populate**\<`Paths`\>(`path`, `select?`, `model?`, `match?`): `Query`\<keyof `Paths` extends `never` ? `unknown` : `Omit`\<`unknown`, keyof `Paths`\> & `Paths`, `T`, \{\}, `UnpackedIntersection`\<`T`, `Paths`\>, ``"find"``\>
 
 Specifies paths which should be populated with other documents.
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `Paths` | \{\} |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `path` | `any` |
+| `path` | `string` \| `string`[] |
 | `select?` | `any` |
-| `model?` | `string` \| `Model`\<`any`, \{\}, \{\}\> |
+| `model?` | `string` \| `Model`\<`any`, \{\}, \{\}, \{\}, `any`, `any`\> |
 | `match?` | `any` |
 
 #### Returns
 
-`this`
+`Query`\<keyof `Paths` extends `never` ? `unknown` : `Omit`\<`unknown`, keyof `Paths`\> & `Paths`, `T`, \{\}, `UnpackedIntersection`\<`T`, `Paths`\>, ``"find"``\>
 
 #### Inherited from
 
@@ -2521,15 +2629,47 @@ Query.populate
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2424
+node_modules/mongoose/types/query.d.ts:620
 
-▸ **populate**(`options`): `this`
+▸ **populate**\<`Paths`\>(`options`): `Query`\<keyof `Paths` extends `never` ? `unknown` : `Omit`\<`unknown`, keyof `Paths`\> & `Paths`, `T`, \{\}, `UnpackedIntersection`\<`T`, `Paths`\>, ``"find"``\>
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `Paths` | \{\} |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `options` | `PopulateOptions` \| `PopulateOptions`[] |
+| `options` | `PopulateOptions` \| (`string` \| `PopulateOptions`)[] |
+
+#### Returns
+
+`Query`\<keyof `Paths` extends `never` ? `unknown` : `Omit`\<`unknown`, keyof `Paths`\> & `Paths`, `T`, \{\}, `UnpackedIntersection`\<`T`, `Paths`\>, ``"find"``\>
+
+#### Inherited from
+
+Query.populate
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:632
+
+___
+
+### post
+
+▸ **post**(`fn`): `this`
+
+Add post middleware to this query instance. Doesn't affect other queries.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `fn` | `Function` |
 
 #### Returns
 
@@ -2537,17 +2677,43 @@ node_modules/mongoose/index.d.ts:2424
 
 #### Inherited from
 
-Query.populate
+Query.post
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2425
+node_modules/mongoose/types/query.d.ts:646
+
+___
+
+### pre
+
+▸ **pre**(`fn`): `this`
+
+Add pre middleware to this query instance. Doesn't affect other queries.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `fn` | `Function` |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Query.pre
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:643
 
 ___
 
 ### projection
 
-▸ **projection**(`fields?`): `any`
+▸ **projection**(`fields?`): `ProjectionFields`\<`T`\>
 
 Get/set the current projection (AKA fields). Pass `null` to remove the current projection.
 
@@ -2555,11 +2721,11 @@ Get/set the current projection (AKA fields). Pass `null` to remove the current p
 
 | Name | Type |
 | :------ | :------ |
-| `fields?` | `any` |
+| `fields?` | `string` \| `ProjectionFields`\<`T`\> |
 
 #### Returns
 
-`any`
+`ProjectionFields`\<`T`\>
 
 #### Inherited from
 
@@ -2567,13 +2733,47 @@ Query.projection
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2428
+node_modules/mongoose/types/query.d.ts:649
+
+▸ **projection**(`fields`): ``null``
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `fields` | ``null`` |
+
+#### Returns
+
+``null``
+
+#### Inherited from
+
+Query.projection
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:650
+
+▸ **projection**(): ``null`` \| `ProjectionFields`\<`T`\>
+
+#### Returns
+
+``null`` \| `ProjectionFields`\<`T`\>
+
+#### Inherited from
+
+Query.projection
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:651
 
 ___
 
 ### read
 
-▸ **read**(`pref`, `tags?`): `this`
+▸ **read**(`mode`, `tags?`): `this`
 
 Determines the MongoDB nodes from which to read.
 
@@ -2581,7 +2781,7 @@ Determines the MongoDB nodes from which to read.
 
 | Name | Type |
 | :------ | :------ |
-| `pref` | `string` |
+| `mode` | `string` |
 | `tags?` | `any`[] |
 
 #### Returns
@@ -2594,7 +2794,7 @@ Query.read
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2431
+node_modules/mongoose/types/query.d.ts:654
 
 ___
 
@@ -2620,16 +2820,43 @@ Query.readConcern
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2434
+node_modules/mongoose/types/query.d.ts:657
 
 ___
 
 ### regex
 
-▸ **regex**(`val`): `this`
+▸ **regex**\<`K`\>(`path`, `val`): `this`
 
 Specifies a `$regex` query condition. When called with one argument, the most recent path passed to `where()` is used.
 
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | `string` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `path` | `K` |
+| `val` | `RegExp` |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Query.regex
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:660
+
+▸ **regex**(`val`): `this`
+
 #### Parameters
 
 | Name | Type |
@@ -2646,80 +2873,29 @@ Query.regex
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2437
-
-▸ **regex**(`path`, `val`): `this`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `path` | `string` |
-| `val` | `string` \| `RegExp` |
-
-#### Returns
-
-`this`
-
-#### Inherited from
-
-Query.regex
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2438
-
-___
-
-### remove
-
-▸ **remove**(`filter?`, `callback?`): `Query`\<`any`, `T`, \{\}, `T`\>
-
-Declare and/or execute this query as a remove() operation. `remove()` is
-deprecated, you should use [`deleteOne()`](#query_Query-deleteOne)
-or [`deleteMany()`](#query_Query-deleteMany) instead.
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `filter?` | `FilterQuery`\<`T`\> |
-| `callback?` | `Callback`\<`any`\> |
-
-#### Returns
-
-`Query`\<`any`, `T`, \{\}, `T`\>
-
-#### Inherited from
-
-Query.remove
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2445
+node_modules/mongoose/types/query.d.ts:661
 
 ___
 
 ### replaceOne
 
-▸ **replaceOne**(`filter?`, `replacement?`, `options?`, `callback?`): `Query`\<`any`, `T`, \{\}, `T`\>
+▸ **replaceOne**(`filter?`, `replacement?`, `options?`): `Query`\<`any`, `T`, \{\}, `T`, ``"replaceOne"``\>
 
 Declare and/or execute this query as a replaceOne() operation. Same as
 `update()`, except MongoDB will replace the existing document and will
-not accept any [atomic](https://docs.mongodb.com/manual/tutorial/model-data-for-atomic-operations/#pattern) operators (`$set`, etc.)
+not accept any [atomic](https://www.mongodb.com/docs/manual/tutorial/model-data-for-atomic-operations/#pattern) operators (`$set`, etc.)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `filter?` | `FilterQuery`\<`T`\> |
-| `replacement?` | `DocumentDefinition`\<`T`\> |
-| `options?` | ``null`` \| `QueryOptions` |
-| `callback?` | `Callback`\<`any`\> |
+| `replacement?` | `T` \| `AnyObject` |
+| `options?` | ``null`` \| `QueryOptions`\<`T`\> |
 
 #### Returns
 
-`Query`\<`any`, `T`, \{\}, `T`\>
+`Query`\<`any`, `T`, \{\}, `T`, ``"replaceOne"``\>
 
 #### Inherited from
 
@@ -2727,48 +2903,31 @@ Query.replaceOne
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2452
-
-▸ **replaceOne**(`filter?`, `replacement?`, `options?`, `callback?`): `Query`\<`any`, `T`, \{\}, `T`\>
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `filter?` | `FilterQuery`\<`T`\> |
-| `replacement?` | `Object` |
-| `options?` | ``null`` \| `QueryOptions` |
-| `callback?` | `Callback`\<`any`\> |
-
-#### Returns
-
-`Query`\<`any`, `T`, \{\}, `T`\>
-
-#### Inherited from
-
-Query.replaceOne
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2453
+node_modules/mongoose/types/query.d.ts:668
 
 ___
 
 ### select
 
-▸ **select**(`arg`): `this`
+▸ **select**\<`RawDocTypeOverride`\>(`arg`): `Query`\<`IfEquals`\<`RawDocTypeOverride`, \{\}, `unknown`, `IfAny`\<`RawDocTypeOverride`, `any`, `Document`\<`unknown`, \{\}, `RawDocTypeOverride`\> & `Require_id`\<`RawDocTypeOverride`\>\>\>, `T`, \{\}, `IfEquals`\<`RawDocTypeOverride`, \{\}, `T`, `RawDocTypeOverride`\>, ``"find"``\>
 
 Specifies which document fields to include or exclude (also known as the query "projection")
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `RawDocTypeOverride` | extends \{ [P in string \| number \| symbol]?: any \} = \{\} |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `arg` | `any` |
+| `arg` | `string` \| `string`[] \| `Record`\<`string`, `string` \| `number` \| `boolean` \| `object`\> |
 
 #### Returns
 
-`this`
+`Query`\<`IfEquals`\<`RawDocTypeOverride`, \{\}, `unknown`, `IfAny`\<`RawDocTypeOverride`, `any`, `Document`\<`unknown`, \{\}, `RawDocTypeOverride`\> & `Require_id`\<`RawDocTypeOverride`\>\>\>, `T`, \{\}, `IfEquals`\<`RawDocTypeOverride`, \{\}, `T`, `RawDocTypeOverride`\>, ``"find"``\>
 
 #### Inherited from
 
@@ -2776,7 +2935,7 @@ Query.select
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2456
+node_modules/mongoose/types/query.d.ts:675
 
 ___
 
@@ -2796,7 +2955,7 @@ Query.selected
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2459
+node_modules/mongoose/types/query.d.ts:702
 
 ___
 
@@ -2816,7 +2975,7 @@ Query.selectedExclusively
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2462
+node_modules/mongoose/types/query.d.ts:705
 
 ___
 
@@ -2836,7 +2995,7 @@ Query.selectedInclusively
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2465
+node_modules/mongoose/types/query.d.ts:708
 
 ___
 
@@ -2844,7 +3003,7 @@ ___
 
 ▸ **session**(`session`): `this`
 
-Sets the [MongoDB session](https://docs.mongodb.com/manual/reference/server-sessions/)
+Sets the [MongoDB session](https://www.mongodb.com/docs/manual/reference/server-sessions/)
 associated with this query. Sessions are how you mark a query as part of a
 [transaction](/docs/transactions.html).
 
@@ -2864,7 +3023,7 @@ Query.session
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2472
+node_modules/mongoose/types/query.d.ts:715
 
 ___
 
@@ -2893,7 +3052,7 @@ Query.set
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2479
+node_modules/mongoose/types/query.d.ts:722
 
 ___
 
@@ -2907,7 +3066,7 @@ Sets query options. Some options only make sense for certain operations.
 
 | Name | Type |
 | :------ | :------ |
-| `options` | `QueryOptions` |
+| `options` | `QueryOptions`\<`T`\> |
 | `overwrite?` | `boolean` |
 
 #### Returns
@@ -2920,7 +3079,7 @@ Query.setOptions
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2482
+node_modules/mongoose/types/query.d.ts:725
 
 ___
 
@@ -2946,7 +3105,7 @@ Query.setQuery
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2485
+node_modules/mongoose/types/query.d.ts:728
 
 ___
 
@@ -2970,16 +3129,43 @@ Query.setUpdate
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2487
+node_modules/mongoose/types/query.d.ts:730
 
 ___
 
 ### size
 
-▸ **size**(`val`): `this`
+▸ **size**\<`K`\>(`path`, `val`): `this`
 
 Specifies an `$size` query condition. When called with one argument, the most recent path passed to `where()` is used.
 
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `K` | `string` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `path` | `K` |
+| `val` | `number` |
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+Query.size
+
+#### Defined in
+
+node_modules/mongoose/types/query.d.ts:733
+
+▸ **size**(`val`): `this`
+
 #### Parameters
 
 | Name | Type |
@@ -2996,28 +3182,7 @@ Query.size
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2490
-
-▸ **size**(`path`, `val`): `this`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `path` | `string` |
-| `val` | `number` |
-
-#### Returns
-
-`this`
-
-#### Inherited from
-
-Query.size
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2491
+node_modules/mongoose/types/query.d.ts:734
 
 ___
 
@@ -3043,35 +3208,15 @@ Query.skip
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2494
+node_modules/mongoose/types/query.d.ts:737
 
 ___
 
 ### slice
 
-▸ **slice**(`val`): `this`
+▸ **slice**(`path`, `val`): `this`
 
 Specifies a `$slice` projection for an array.
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `val` | `number` \| `number`[] |
-
-#### Returns
-
-`this`
-
-#### Inherited from
-
-Query.slice
-
-#### Defined in
-
-node_modules/mongoose/index.d.ts:2497
-
-▸ **slice**(`path`, `val`): `this`
 
 #### Parameters
 
@@ -3090,21 +3235,15 @@ Query.slice
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2498
+node_modules/mongoose/types/query.d.ts:740
 
-___
-
-### snapshot
-
-▸ **snapshot**(`val?`): `this`
-
-Specifies this query as a `snapshot` query.
+▸ **slice**(`val`): `this`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `val?` | `boolean` |
+| `val` | `number` \| `number`[] |
 
 #### Returns
 
@@ -3112,17 +3251,17 @@ Specifies this query as a `snapshot` query.
 
 #### Inherited from
 
-Query.snapshot
+Query.slice
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2501
+node_modules/mongoose/types/query.d.ts:741
 
 ___
 
 ### sort
 
-▸ **sort**(`arg`): `this`
+▸ **sort**(`arg?`): `this`
 
 Sets the sort order. If an object is passed, values allowed are `asc`, `desc`, `ascending`, `descending`, `1`, and `-1`.
 
@@ -3130,7 +3269,7 @@ Sets the sort order. If an object is passed, values allowed are `asc`, `desc`, `
 
 | Name | Type |
 | :------ | :------ |
-| `arg` | `any` |
+| `arg?` | ``null`` \| `string` \| \{ `[key: string]`: `SortOrder` \| \{ `$meta`: `any`  \};  \} \| [`string`, `SortOrder`][] |
 
 #### Returns
 
@@ -3142,7 +3281,7 @@ Query.sort
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2504
+node_modules/mongoose/types/query.d.ts:744
 
 ___
 
@@ -3171,31 +3310,25 @@ Query.tailable
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2507
+node_modules/mongoose/types/query.d.ts:747
 
 ___
 
 ### toConstructor
 
-▸ **toConstructor**(): (...`args`: `any`[]) =\> `Query`\<`unknown`, `T`, \{\}, `T`\>
+▸ **toConstructor**\<`RetType`\>(): `RetType`
 
 Converts this query to a customized, reusable query constructor with all arguments and options retained.
 
-#### Returns
-
-`fn`
-
-• **new toConstructor**(`...args`): `Query`\<`unknown`, `T`, \{\}, `T`\>
-
-##### Parameters
+#### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `...args` | `any`[] |
+| `RetType` | typeof `Query` |
 
-##### Returns
+#### Returns
 
-`Query`\<`unknown`, `T`, \{\}, `T`\>
+`RetType`
 
 #### Inherited from
 
@@ -3203,42 +3336,46 @@ Query.toConstructor
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2519
+node_modules/mongoose/types/query.d.ts:759
 
 ___
 
-### update
+### transform
 
-▸ **update**(`filter?`, `update?`, `options?`, `callback?`): `Query`\<`UpdateWriteOpResult`, `T`, \{\}, `T`\>
+▸ **transform**\<`MappedType`\>(`fn`): `Query`\<`MappedType`, `T`, \{\}, `T`, ``"find"``\>
 
-Declare and/or execute this query as an update() operation.
+Runs a function `fn` and treats the return value of `fn` as the new value
+for the query to resolve to.
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `MappedType` |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `filter?` | `FilterQuery`\<`T`\> |
-| `update?` | `UpdateWithAggregationPipeline` \| `UpdateQuery`\<`T`\> |
-| `options?` | ``null`` \| `QueryOptions` |
-| `callback?` | `Callback`\<`UpdateWriteOpResult`\> |
+| `fn` | (`doc`: `unknown`) =\> `MappedType` |
 
 #### Returns
 
-`Query`\<`UpdateWriteOpResult`, `T`, \{\}, `T`\>
+`Query`\<`MappedType`, `T`, \{\}, `T`, ``"find"``\>
 
 #### Inherited from
 
-Query.update
+Query.transform
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2522
+node_modules/mongoose/types/query.d.ts:561
 
 ___
 
 ### updateMany
 
-▸ **updateMany**(`filter?`, `update?`, `options?`, `callback?`): `Query`\<`UpdateWriteOpResult`, `T`, \{\}, `T`\>
+▸ **updateMany**(`filter?`, `update?`, `options?`): `Query`\<`UpdateWriteOpResult`, `T`, \{\}, `T`, ``"updateMany"``\>
 
 Declare and/or execute this query as an updateMany() operation. Same as
 `update()`, except MongoDB will update _all_ documents that match
@@ -3251,12 +3388,11 @@ the `multi` option.
 | :------ | :------ |
 | `filter?` | `FilterQuery`\<`T`\> |
 | `update?` | `UpdateWithAggregationPipeline` \| `UpdateQuery`\<`T`\> |
-| `options?` | ``null`` \| `QueryOptions` |
-| `callback?` | `Callback`\<`UpdateWriteOpResult`\> |
+| `options?` | ``null`` \| `QueryOptions`\<`T`\> |
 
 #### Returns
 
-`Query`\<`UpdateWriteOpResult`, `T`, \{\}, `T`\>
+`Query`\<`UpdateWriteOpResult`, `T`, \{\}, `T`, ``"updateMany"``\>
 
 #### Inherited from
 
@@ -3264,13 +3400,13 @@ Query.updateMany
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2530
+node_modules/mongoose/types/query.d.ts:767
 
 ___
 
 ### updateOne
 
-▸ **updateOne**(`filter?`, `update?`, `options?`, `callback?`): `Query`\<`UpdateWriteOpResult`, `T`, \{\}, `T`\>
+▸ **updateOne**(`filter?`, `update?`, `options?`): `Query`\<`UpdateWriteOpResult`, `T`, \{\}, `T`, ``"updateOne"``\>
 
 Declare and/or execute this query as an updateOne() operation. Same as
 `update()`, except it does not support the `multi` or `overwrite` options.
@@ -3281,12 +3417,11 @@ Declare and/or execute this query as an updateOne() operation. Same as
 | :------ | :------ |
 | `filter?` | `FilterQuery`\<`T`\> |
 | `update?` | `UpdateWithAggregationPipeline` \| `UpdateQuery`\<`T`\> |
-| `options?` | ``null`` \| `QueryOptions` |
-| `callback?` | `Callback`\<`UpdateWriteOpResult`\> |
+| `options?` | ``null`` \| `QueryOptions`\<`T`\> |
 
 #### Returns
 
-`Query`\<`UpdateWriteOpResult`, `T`, \{\}, `T`\>
+`Query`\<`UpdateWriteOpResult`, `T`, \{\}, `T`, ``"updateOne"``\>
 
 #### Inherited from
 
@@ -3294,7 +3429,7 @@ Query.updateOne
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2536
+node_modules/mongoose/types/query.d.ts:777
 
 ___
 
@@ -3321,7 +3456,7 @@ Query.w
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2542
+node_modules/mongoose/types/query.d.ts:787
 
 ___
 
@@ -3348,7 +3483,7 @@ Query.where
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2545
+node_modules/mongoose/types/query.d.ts:790
 
 ▸ **where**(`obj`): `this`
 
@@ -3368,7 +3503,7 @@ Query.where
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2546
+node_modules/mongoose/types/query.d.ts:791
 
 ▸ **where**(): `this`
 
@@ -3382,7 +3517,7 @@ Query.where
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2547
+node_modules/mongoose/types/query.d.ts:792
 
 ___
 
@@ -3408,7 +3543,7 @@ Query.within
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2550
+node_modules/mongoose/types/query.d.ts:795
 
 ___
 
@@ -3416,7 +3551,7 @@ ___
 
 ▸ **wtimeout**(`ms`): `this`
 
-If [`w \> 1`](/docs/api.html#query_Query-w), the maximum amount of time to
+If [`w \> 1`](/docs/api/query.html#query_Query-w), the maximum amount of time to
 wait for this write to propagate through the replica set before this
 operation fails. The default is `0`, which means no timeout.
 
@@ -3436,4 +3571,4 @@ Query.wtimeout
 
 #### Defined in
 
-node_modules/mongoose/index.d.ts:2557
+node_modules/mongoose/types/query.d.ts:802

@@ -12,13 +12,13 @@
 
 ### superAdminCheck
 
-▸ **superAdminCheck**(`user`): `void`
+▸ **superAdminCheck**(`appUserProfile`): `void`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `user` | [`InterfaceUser`](../interfaces/models_User.InterfaceUser.md) |
+| `appUserProfile` | [`InterfaceAppUserProfile`](../interfaces/models_AppUserProfile.InterfaceAppUserProfile.md) |
 
 #### Returns
 
@@ -26,4 +26,4 @@
 
 #### Defined in
 
-[src/utilities/superAdminCheck.ts:5](https://github.com/PalisadoesFoundation/talawa-api/blob/cf57ca9/src/utilities/superAdminCheck.ts#L5)
+[src/utilities/superAdminCheck.ts:5](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/utilities/superAdminCheck.ts#L5)

@@ -35,7 +35,8 @@ The following checks are done:
 2. If the organization exists.
 3. If the user is an admin for the organization.
 4. If the custom field to be removed exists
+5. If the user has appUserProfile
 
 #### Defined in
 
-[src/resolvers/Mutation/removeOrganizationCustomField.ts:24](https://github.com/PalisadoesFoundation/talawa-api/blob/cf57ca9/src/resolvers/Mutation/removeOrganizationCustomField.ts#L24)
+[src/resolvers/Mutation/removeOrganizationCustomField.ts:31](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/resolvers/Mutation/removeOrganizationCustomField.ts#L31)

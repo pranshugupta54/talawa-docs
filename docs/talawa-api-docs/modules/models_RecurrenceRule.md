@@ -21,8 +21,8 @@
 
 ### RecurrenceRule
 
-• `Const` **RecurrenceRule**: `Model`\<[`InterfaceRecurrenceRule`](../interfaces/models_RecurrenceRule.InterfaceRecurrenceRule.md), \{\}, \{\}\>
+• `Const` **RecurrenceRule**: `Model`\<[`InterfaceRecurrenceRule`](../interfaces/models_RecurrenceRule.InterfaceRecurrenceRule.md), \{\}, \{\}, \{\}, `Document`\<`unknown`, \{\}, [`InterfaceRecurrenceRule`](../interfaces/models_RecurrenceRule.InterfaceRecurrenceRule.md)\> & [`InterfaceRecurrenceRule`](../interfaces/models_RecurrenceRule.InterfaceRecurrenceRule.md) & `Required`\<\{ `_id`: `ObjectId`  \}\>, `any`\>
 
 #### Defined in
 
-[src/models/RecurrenceRule.ts:100](https://github.com/adi790uu/talawa-api/blob/5146430/src/models/RecurrenceRule.ts#L100)
+[src/models/RecurrenceRule.ts:100](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/RecurrenceRule.ts#L100)

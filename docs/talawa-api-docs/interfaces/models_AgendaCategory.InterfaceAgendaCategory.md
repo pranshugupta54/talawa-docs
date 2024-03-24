@@ -14,7 +14,7 @@ This is an interface representing a document for an agenda category in the datab
 - [createdBy](models_AgendaCategory.InterfaceAgendaCategory.md#createdby)
 - [description](models_AgendaCategory.InterfaceAgendaCategory.md#description)
 - [name](models_AgendaCategory.InterfaceAgendaCategory.md#name)
-- [organization](models_AgendaCategory.InterfaceAgendaCategory.md#organization)
+- [organizationId](models_AgendaCategory.InterfaceAgendaCategory.md#organizationid)
 - [updatedBy](models_AgendaCategory.InterfaceAgendaCategory.md#updatedby)
 
 ## Properties
@@ -25,7 +25,7 @@ This is an interface representing a document for an agenda category in the datab
 
 #### Defined in
 
-[src/models/AgendaCategory.ts:9](https://github.com/adi790uu/talawa-api/blob/5146430/src/models/AgendaCategory.ts#L9)
+[src/models/AgendaCategory.ts:9](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/AgendaCategory.ts#L9)
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 #### Defined in
 
-[src/models/AgendaCategory.ts:13](https://github.com/adi790uu/talawa-api/blob/5146430/src/models/AgendaCategory.ts#L13)
+[src/models/AgendaCategory.ts:13](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/AgendaCategory.ts#L13)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[src/models/AgendaCategory.ts:11](https://github.com/adi790uu/talawa-api/blob/5146430/src/models/AgendaCategory.ts#L11)
+[src/models/AgendaCategory.ts:11](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/AgendaCategory.ts#L11)
 
 ___
 
@@ -55,17 +55,17 @@ ___
 
 #### Defined in
 
-[src/models/AgendaCategory.ts:10](https://github.com/adi790uu/talawa-api/blob/5146430/src/models/AgendaCategory.ts#L10)
+[src/models/AgendaCategory.ts:10](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/AgendaCategory.ts#L10)
 
 ___
 
-### organization
+### organizationId
 
-• **organization**: `PopulatedDoc`\<[`InterfaceOrganization`](models_Organization.InterfaceOrganization.md) & `Document`\>
+• **organizationId**: `PopulatedDoc`\<[`InterfaceOrganization`](models_Organization.InterfaceOrganization.md) & `Document`\>
 
 #### Defined in
 
-[src/models/AgendaCategory.ts:12](https://github.com/adi790uu/talawa-api/blob/5146430/src/models/AgendaCategory.ts#L12)
+[src/models/AgendaCategory.ts:12](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/AgendaCategory.ts#L12)
 
 ___
 
@@ -75,4 +75,4 @@ ___
 
 #### Defined in
 
-[src/models/AgendaCategory.ts:14](https://github.com/adi790uu/talawa-api/blob/5146430/src/models/AgendaCategory.ts#L14)
+[src/models/AgendaCategory.ts:14](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/AgendaCategory.ts#L14)

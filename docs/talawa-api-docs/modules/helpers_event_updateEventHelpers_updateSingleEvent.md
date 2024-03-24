@@ -42,4 +42,4 @@ The following steps are followed:
 
 #### Defined in
 
-[src/helpers/event/updateEventHelpers/updateSingleEvent.ts:28](https://github.com/adi790uu/talawa-api/blob/5146430/src/helpers/event/updateEventHelpers/updateSingleEvent.ts#L28)
+[src/helpers/event/updateEventHelpers/updateSingleEvent.ts:28](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/helpers/event/updateEventHelpers/updateSingleEvent.ts#L28)

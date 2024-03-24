@@ -32,8 +32,9 @@ context of entire application
 
 The following checks are done:
 1. If the user exists
+2.If the user has appUserProfile
 2. If the user is the SUPERADMIN of organization
 
 #### Defined in
 
-[src/resolvers/Mutation/blockPluginCreationBySuperadmin.ts:16](https://github.com/PalisadoesFoundation/talawa-api/blob/cf57ca9/src/resolvers/Mutation/blockPluginCreationBySuperadmin.ts#L16)
+[src/resolvers/Mutation/blockPluginCreationBySuperadmin.ts:21](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/resolvers/Mutation/blockPluginCreationBySuperadmin.ts#L21)

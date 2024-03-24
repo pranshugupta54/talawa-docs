@@ -32,4 +32,4 @@ The following checks are done:
 
 #### Defined in
 
-[src/resolvers/Mutation/addLanguageTranslation.ts:14](https://github.com/PalisadoesFoundation/talawa-api/blob/cf57ca9/src/resolvers/Mutation/addLanguageTranslation.ts#L14)
+[src/resolvers/Mutation/addLanguageTranslation.ts:15](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/resolvers/Mutation/addLanguageTranslation.ts#L15)

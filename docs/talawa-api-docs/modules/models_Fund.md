@@ -16,8 +16,8 @@
 
 ### Fund
 
-• `Const` **Fund**: `Model`\<[`InterfaceFund`](../interfaces/models_Fund.InterfaceFund.md), \{\}, \{\}\>
+• `Const` **Fund**: `Model`\<[`InterfaceFund`](../interfaces/models_Fund.InterfaceFund.md), \{\}, \{\}, \{\}, `Document`\<`unknown`, \{\}, [`InterfaceFund`](../interfaces/models_Fund.InterfaceFund.md)\> & [`InterfaceFund`](../interfaces/models_Fund.InterfaceFund.md) & `Required`\<\{ `_id`: `ObjectId`  \}\>, `any`\>
 
 #### Defined in
 
-[src/models/Fund.ts:74](https://github.com/adi790uu/talawa-api/blob/5146430/src/models/Fund.ts#L74)
+[src/models/Fund.ts:74](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/Fund.ts#L74)
