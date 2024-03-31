@@ -6,13 +6,13 @@
 
 ### Variables
 
-- [removeFundraisingCampaingPledge](resolvers_Mutation_removeFundraisingCampaingPledge.md#removefundraisingcampaingpledge)
+- [removeFundraisingCampaignPledge](resolvers_Mutation_removeFundraisingCampaingPledge.md#removefundraisingcampaignpledge)
 
 ## Variables
 
-### removeFundraisingCampaingPledge
+### removeFundraisingCampaignPledge
 
-• `Const` **removeFundraisingCampaingPledge**: [`MutationResolvers`](types_generatedGraphQLTypes.md#mutationresolvers)[``"removeFundraisingCampaignPledge"``]
+• `Const` **removeFundraisingCampaignPledge**: [`MutationResolvers`](types_generatedGraphQLTypes.md#mutationresolvers)[``"removeFundraisingCampaignPledge"``]
 
 This function enables to remove fundraising campaign pledge .
 
@@ -37,4 +37,4 @@ The following checks are done:
 
 #### Defined in
 
-[src/resolvers/Mutation/removeFundraisingCampaingPledge.ts:26](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/resolvers/Mutation/removeFundraisingCampaingPledge.ts#L26)
+[src/resolvers/Mutation/removeFundraisingCampaingPledge.ts:26](https://github.com/PalisadoesFoundation/talawa-api/blob/e5f7a9d/src/resolvers/Mutation/removeFundraisingCampaingPledge.ts#L26)

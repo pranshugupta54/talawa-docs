@@ -10,6 +10,7 @@
 
 ### Functions
 
+- [createPluginUpdateResponse](resolvers_Subscription_onPluginUpdate.md#createpluginupdateresponse)
 - [filterFunction](resolvers_Subscription_onPluginUpdate.md#filterfunction)
 
 ## Variables
@@ -20,9 +21,29 @@
 
 #### Defined in
 
-[src/resolvers/Subscription/onPluginUpdate.ts:29](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/resolvers/Subscription/onPluginUpdate.ts#L29)
+[src/resolvers/Subscription/onPluginUpdate.ts:31](https://github.com/PalisadoesFoundation/talawa-api/blob/e5f7a9d/src/resolvers/Subscription/onPluginUpdate.ts#L31)
 
 ## Functions
+
+### createPluginUpdateResponse
+
+▸ **createPluginUpdateResponse**(`payload`): `any`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `payload` | `any` |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+[src/resolvers/Subscription/onPluginUpdate.ts:28](https://github.com/PalisadoesFoundation/talawa-api/blob/e5f7a9d/src/resolvers/Subscription/onPluginUpdate.ts#L28)
+
+___
 
 ### filterFunction
 
@@ -50,4 +71,4 @@ You can learn about `subscription` [here](https://www.apollographql.com/docs/apo
 
 #### Defined in
 
-[src/resolvers/Subscription/onPluginUpdate.ts:20](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/resolvers/Subscription/onPluginUpdate.ts#L20)
+[src/resolvers/Subscription/onPluginUpdate.ts:20](https://github.com/PalisadoesFoundation/talawa-api/blob/e5f7a9d/src/resolvers/Subscription/onPluginUpdate.ts#L20)

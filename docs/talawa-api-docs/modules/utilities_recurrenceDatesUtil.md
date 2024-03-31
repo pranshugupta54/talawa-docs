@@ -8,6 +8,7 @@
 
 - [convertToRRuleDateString](utilities_recurrenceDatesUtil.md#converttorruledatestring)
 - [convertToUTCDate](utilities_recurrenceDatesUtil.md#converttoutcdate)
+- [countTotalMondaysInMonth](utilities_recurrenceDatesUtil.md#counttotalmondaysinmonth)
 
 ## Functions
 
@@ -31,7 +32,7 @@ converted date string.
 
 #### Defined in
 
-[src/utilities/recurrenceDatesUtil.ts:24](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/utilities/recurrenceDatesUtil.ts#L24)
+[src/utilities/recurrenceDatesUtil.ts:24](https://github.com/PalisadoesFoundation/talawa-api/blob/e5f7a9d/src/utilities/recurrenceDatesUtil.ts#L24)
 
 ___
 
@@ -55,4 +56,28 @@ converted date.
 
 #### Defined in
 
-[src/utilities/recurrenceDatesUtil.ts:7](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/utilities/recurrenceDatesUtil.ts#L7)
+[src/utilities/recurrenceDatesUtil.ts:7](https://github.com/PalisadoesFoundation/talawa-api/blob/e5f7a9d/src/utilities/recurrenceDatesUtil.ts#L7)
+
+___
+
+### countTotalMondaysInMonth
+
+▸ **countTotalMondaysInMonth**(`date`): `number`
+
+This function counts the total number of mondays in a month.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `date` | `Date` | a date. |
+
+#### Returns
+
+`number`
+
+total number of mondays.
+
+#### Defined in
+
+[src/utilities/recurrenceDatesUtil.ts:40](https://github.com/PalisadoesFoundation/talawa-api/blob/e5f7a9d/src/utilities/recurrenceDatesUtil.ts#L40)

@@ -13,6 +13,7 @@ This is an interface representing a document for fund in the database(MongoDB).
 - [\_id](models_Fund.InterfaceFund.md#_id)
 - [campaigns](models_Fund.InterfaceFund.md#campaigns)
 - [createdAt](models_Fund.InterfaceFund.md#createdat)
+- [creatorId](models_Fund.InterfaceFund.md#creatorid)
 - [isArchived](models_Fund.InterfaceFund.md#isarchived)
 - [isDefault](models_Fund.InterfaceFund.md#isdefault)
 - [name](models_Fund.InterfaceFund.md#name)
@@ -29,7 +30,7 @@ This is an interface representing a document for fund in the database(MongoDB).
 
 #### Defined in
 
-[src/models/Fund.ts:9](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/Fund.ts#L9)
+[src/models/Fund.ts:10](https://github.com/PalisadoesFoundation/talawa-api/blob/e5f7a9d/src/models/Fund.ts#L10)
 
 ___
 
@@ -39,7 +40,7 @@ ___
 
 #### Defined in
 
-[src/models/Fund.ts:16](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/Fund.ts#L16)
+[src/models/Fund.ts:18](https://github.com/PalisadoesFoundation/talawa-api/blob/e5f7a9d/src/models/Fund.ts#L18)
 
 ___
 
@@ -49,7 +50,17 @@ ___
 
 #### Defined in
 
-[src/models/Fund.ts:17](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/Fund.ts#L17)
+[src/models/Fund.ts:19](https://github.com/PalisadoesFoundation/talawa-api/blob/e5f7a9d/src/models/Fund.ts#L19)
+
+___
+
+### creatorId
+
+• **creatorId**: `PopulatedDoc`\<[`InterfaceUser`](models_User.InterfaceUser.md) & `Document`\>
+
+#### Defined in
+
+[src/models/Fund.ts:17](https://github.com/PalisadoesFoundation/talawa-api/blob/e5f7a9d/src/models/Fund.ts#L17)
 
 ___
 
@@ -59,7 +70,7 @@ ___
 
 #### Defined in
 
-[src/models/Fund.ts:15](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/Fund.ts#L15)
+[src/models/Fund.ts:16](https://github.com/PalisadoesFoundation/talawa-api/blob/e5f7a9d/src/models/Fund.ts#L16)
 
 ___
 
@@ -69,7 +80,7 @@ ___
 
 #### Defined in
 
-[src/models/Fund.ts:14](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/Fund.ts#L14)
+[src/models/Fund.ts:15](https://github.com/PalisadoesFoundation/talawa-api/blob/e5f7a9d/src/models/Fund.ts#L15)
 
 ___
 
@@ -79,7 +90,7 @@ ___
 
 #### Defined in
 
-[src/models/Fund.ts:11](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/Fund.ts#L11)
+[src/models/Fund.ts:12](https://github.com/PalisadoesFoundation/talawa-api/blob/e5f7a9d/src/models/Fund.ts#L12)
 
 ___
 
@@ -89,7 +100,7 @@ ___
 
 #### Defined in
 
-[src/models/Fund.ts:10](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/Fund.ts#L10)
+[src/models/Fund.ts:11](https://github.com/PalisadoesFoundation/talawa-api/blob/e5f7a9d/src/models/Fund.ts#L11)
 
 ___
 
@@ -99,7 +110,7 @@ ___
 
 #### Defined in
 
-[src/models/Fund.ts:12](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/Fund.ts#L12)
+[src/models/Fund.ts:13](https://github.com/PalisadoesFoundation/talawa-api/blob/e5f7a9d/src/models/Fund.ts#L13)
 
 ___
 
@@ -109,7 +120,7 @@ ___
 
 #### Defined in
 
-[src/models/Fund.ts:13](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/Fund.ts#L13)
+[src/models/Fund.ts:14](https://github.com/PalisadoesFoundation/talawa-api/blob/e5f7a9d/src/models/Fund.ts#L14)
 
 ___
 
@@ -119,4 +130,4 @@ ___
 
 #### Defined in
 
-[src/models/Fund.ts:18](https://github.com/PalisadoesFoundation/talawa-api/blob/708df7e/src/models/Fund.ts#L18)
+[src/models/Fund.ts:20](https://github.com/PalisadoesFoundation/talawa-api/blob/e5f7a9d/src/models/Fund.ts#L20)
